@@ -1,0 +1,535 @@
+/* 
+-----------------------------------------------------
+  Stylesheet Guide
+-----------------------------------------------------
+  
+  1. Default stylesheets
+    1.1. Color Schemes
+  2. General classes
+  3. Main
+  4. Basic Elements
+    4.1. Typography
+    4.2. Lists
+    4.3. Buttons
+    4.4. Tables
+    4.5. Forms
+  5. Header
+  6. Main Navigation
+  7. Footer
+*/
+@import "reset.css";
+@import "../fonts/RoadRadio/font.css";
+
+@import url(https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic);
+
+/* ------------------------------------------------
+
+    1. Default stylesheets
+
+------------------------------------------------ */
+
+    body {
+        font: 14px/20px Arial,sans-serif;
+        color:#3C4044;
+        background:#F2F2F2;
+    }
+
+    *{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+   /* --------------------------------------------
+        1.1. Color Schemes
+   -------------------------------------------- */
+
+      
+
+/* ------------------------------------------------
+
+    2. General Classes
+
+------------------------------------------------ */
+
+   .align_left{
+    text-align: left;
+   }
+
+   .align_right{
+    text-align: right;
+   }
+
+   .align_center{
+    text-align: center;
+   }
+
+   .alignleft{
+    float: left;
+   }
+
+   .alignright{
+    float: right;
+   }
+
+   .wrapper{overflow: hidden;}
+
+   .hide{ display: none;}
+
+   .show{ display: block;}
+
+   .d_ib{display: inline-block;}
+
+   .transparent{ opacity:0; }
+
+   .invisible{ 
+    opacity: 0;
+    visibility: hidden;
+   }
+
+   .visible{ 
+    opacity:1; 
+    visibility: visible;
+   }
+
+   .p_abs{position: absolute;}
+
+   .p_rel{position: relative;}
+
+   .p_fix{position: fixed;}
+
+   .clear {clear:both;width:100%;line-height:0;font-size:0;}
+
+   .clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+   }
+
+   .reg {text-transform:uppercase}
+
+/* ------------------------------------------------
+
+    3. Main
+
+------------------------------------------------ */
+
+/* ------------------------------------------------
+
+    4. Basic Elements
+
+------------------------------------------------ */
+   /* --------------------------------------------
+        4.1. Typography
+   -------------------------------------------- */
+  
+      h1,h2,h3,h4,h5,h6{
+         font-family: 'Roboto', sans-serif;
+         font-weight:normal;
+         line-height: 1.23em;
+         color: #333333;
+         margin: 0;
+         margin-bottom: 17px;
+      }
+
+      h1{font-size: 38px;}
+      h2{font-size: 30px;}
+      h3{font-size: 22px;}
+      h4{font-size: 18px;}
+      h5{font-size: 16px;}
+      h6{font-size: 14px;}
+
+      p:not(:last-child){margin-bottom: 20px;}
+
+      mark{background-color: #20cfef;padding: 0 2px;color: #fff;}
+      mark.red{background-color: #ee352f;}
+
+      a{
+         color: #;
+         text-decoration: none;
+         -webkit-transition: all 0.5s;
+         -o-transition: all 0.5s;
+         transition: all 0.5s;
+      }
+      a:hover{
+         color: #333;
+         text-decoration: none;
+         -webkit-transition: all 0.3s;
+         -o-transition: all 0.3s;
+         transition: all 0.3s;
+      }
+      a:focus,
+      a:visited{
+         text-decoration: none;
+      }
+
+   /* --------------------------------------------
+        4.2. Lists
+   -------------------------------------------- */
+     
+   /* --------------------------------------------
+        4.3. Buttons
+   -------------------------------------------- */
+ 
+   /* --------------------------------------------
+        4.4. Tables
+   -------------------------------------------- */
+ 
+   /* --------------------------------------------
+        4.5. Forms
+   -------------------------------------------- */
+
+
+/* ------------------------------------------------
+
+    5. Header
+
+------------------------------------------------ */
+   
+    #header{
+        background-color: #3c4044;
+        padding: 18px 17px 18px 23px;
+    }
+
+    #header:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    #nav_btn{
+        display: block;
+        float: left;
+        width: 20px;
+        height: 24px;
+        margin-right: 25px;
+        background: url(../images/ico-menu-1.png) 50% 50% no-repeat;
+    }
+
+    #nav_btn:hover{
+        opacity: 0.7;
+    }
+
+    #nav_btn.active{
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    .logo a{
+        display: inline-block;
+        color: #ccc;
+        font: 24px/1 'roadradiobold',sans-serif;
+        text-transform: uppercase;
+    }
+
+    .logo a:hover{
+        color: #fff;
+    }
+
+    .sub_logo{
+        font-size: 14px;
+        line-height: 24px;
+        color: #ccc;
+        display: inline-block;
+        position: relative;
+        padding-left: 17px;
+        margin-left: 30px;
+    }
+
+    .sub_logo:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        margin-top: -4px;
+        left: 0;
+        width: 2px;
+        height: 8px;
+        background-color: #ccc;
+    }
+
+    .header_btn>*{
+        display: inline-block;
+        position: relative;
+        padding-left: 25px;
+        font-size: 15px;
+        line-height: 24px;
+        color: #e6e6e6;
+    }
+
+    .header_btn>*:not(:last-child){
+        margin-right: 25px;
+    }
+
+    .header_btn>*:hover{
+        color: #fff;
+    }
+
+    .header_btn>*:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .notification:before{
+        background: url(../images/ico-notification.png) 50% 50% no-repeat;
+    }
+
+    .notification span{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+        margin-top: 2px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #fff;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #D35500;
+    }
+
+    .settings:before{
+        background: url(../images/ico-settings.png) 50% 50% no-repeat;
+    }
+
+/* ------------------------------------------------
+
+    6. Main Navigation
+
+------------------------------------------------ */
+
+    #navigation_box{
+        position: fixed;
+        z-index: 9;
+        top: 60px;
+        bottom: 0;
+        left: 0;
+        width: 230px;
+        overflow: hidden;
+        background-color: #E6E6E6;
+        border-right: 1px solid #d3d3d3;
+        -webkit-transition: width 0.5s;
+        -o-transition: width 0.5s;
+        transition: width 0.5s;
+    }
+
+    .small_menu #navigation_box{
+        width: 56px;
+    }
+
+    .navigation li{
+        border-bottom: 1px solid #d3d3d3;
+    }
+
+    .navigation li a{
+        display: block;
+        width: 230px;
+        position: relative;
+        font: 16px/20px 'Roboto',sans-serif;
+        color: #333;
+        padding: 20px 10px 20px 64px;
+    }
+
+    .small_menu .navigation li a{
+        padding-left: 56px;
+    }
+
+    .navigation li a:before{
+        content: "";
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        width: 32px;
+        background-image: url(../images/icon.png);
+    }
+
+    .navigation li a:hover{
+        background-color: #f3f3f3;
+    }
+
+    .navigation li.current a{
+        background-color: #8baf3a;
+        color: #fff;
+    }
+
+    .navigation li a.menu_users:before{
+        background-position: 0px 1px;
+        height: 30px;
+        margin-top: -15px;
+    }
+
+    .navigation li a.menu_areas:before{
+        background-position: -37px 0px;
+        height: 30px;
+        margin-top: -15px;
+    }
+
+    .navigation li a.menu_acceptance:before{
+        background-position: -70px -1px;
+        height: 30px;
+        margin-top: -15px;
+    }
+
+    .navigation li a.menu_journals:before{
+        background-position: -107px 0px;
+        height: 28px;
+        margin-top: -14px;
+    }
+
+    .navigation li a.menu_documentation:before{
+        background-position: -140px -1px;
+        height: 28px;
+        margin-top: -14px;
+    }
+
+    .navigation li a.menu_roads:before{
+        background-position: -177px 0px;
+        height: 34px;
+        margin-top: -17px;
+    }
+
+    .navigation li a.menu_contractors:before{
+        background-position: -217px -1px;
+        height: 24px;
+        margin-top: -12px;
+    }
+
+    .navigation li a.menu_types_jobs:before{
+        background-position: -251px -1px;
+        height: 30px;
+        margin-top: -15px;
+    }
+
+    .navigation li a.menu_rates:before{
+        background-position: -287px 0px;
+        height: 32px;
+        margin-top: -16px;
+    }
+
+    .navigation li a.menu_stroytsena:before{
+        background-position: -328px 1px;
+        height: 30px;
+        margin-top: -15px;
+    }
+
+
+
+    .navigation li.current a.menu_users:before{
+        background-position: 0px -31px;
+        height: 30px;
+        margin-top: -15px;
+    }
+
+    .navigation li.current a.menu_areas:before{
+        background-position: -37px -30px;
+        height: 30px;
+        margin-top: -15px;
+    }
+
+    .navigation li.current a.menu_acceptance:before{
+        background-position: -70px -31px;
+        height: 30px;
+        margin-top: -15px;
+    }
+
+    .navigation li.current a.menu_journals:before{
+        background-position: -107px -28px;
+        height: 28px;
+        margin-top: -14px;
+    }
+
+    .navigation li.current a.menu_documentation:before{
+        background-position: -140px -29px;
+        height: 28px;
+        margin-top: -14px;
+    }
+
+    .navigation li.current a.menu_roads:before{
+        background-position: -177px -34px;
+        height: 34px;
+        margin-top: -17px;
+    }
+
+    .navigation li.current a.menu_contractors:before{
+        background-position: -217px -25px;
+        height: 24px;
+        margin-top: -12px;
+    }
+
+    .navigation li.current a.menu_types_jobs:before{
+        background-position: -251px -31px;
+        height: 30px;
+        margin-top: -15px;
+    }
+
+    .navigation li.current a.menu_rates:before{
+        background-position: -287px -32px;
+        height: 32px;
+        margin-top: -16px;
+    }
+
+    .navigation li.current a.menu_stroytsena:before{
+        background-position: -328px -30px;
+        height: 30px;
+        margin-top: -15px;
+    }
+
+    .nav_bottom{
+        height: 46px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: #d6d6d6;
+    }
+
+
+/* ------------------------------------------------
+
+    7. Content
+
+------------------------------------------------ */
+    #content{
+        padding: 18px 22px 66px 248px;
+        -webkit-transition: padding 0.5s;
+        -o-transition: padding 0.5s;
+        transition: padding 0.5s;
+    }
+
+    .small_menu #content{
+        padding-left: 76px;
+    }
+/* ------------------------------------------------
+
+    16. Footer
+
+------------------------------------------------ */
+
+    .copyrite{
+        position: fixed;
+        right: 0;
+        left: 230px;
+        bottom: 0;
+        padding: 13px 0 13px 23px;
+        background-color: #E6E6E6;
+        border-top: 1px solid #d3d3d3;
+        font: 13px/20px Arial,sans-serif;
+        color: #3c4044;
+        -webkit-transition: left 0.5s;
+        -o-transition: left 0.5s;
+        transition: left 0.5s;
+    }
+
+    .copyrite_title{
+        opacity: 0.7;
+    }
