@@ -48,11 +48,6 @@
 
 	});
 
-	$(window).scroll(function(){
-
-		Core.windowScroll();
-		
-	});
 
 
 })(jQuery);
