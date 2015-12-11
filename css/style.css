@@ -122,6 +122,9 @@
     .width_115 {
     width: 115px;
     }
+    .width_275 {
+    width: 275px;
+    }
     .mar_r_5 {
         margin-right: 5px;
     }
@@ -152,7 +155,7 @@
 
       h1{font-size: 38px;}
       h2{font-size: 30px;}
-      h3{font-size: 22px;}
+      h3{font-size: 24px; font-family: Arial, sans-serif; }
       h4{font-size: 18px;}
       h5{font-size: 16px;}
       h6{font-size: 14px;}
@@ -175,6 +178,9 @@
       a:focus,
       a:visited{
          text-decoration: none;
+      }
+      .orange_text {
+        color: #EF6100;
       }
 
    /* --------------------------------------------
@@ -695,6 +701,7 @@ table th {
     font: 15px/20px Arial,sans-serif;
     color: #fff;
     text-align: left;
+    border: none;
     border-right: 1px solid #4e5456;
 }
 table div {
@@ -711,7 +718,7 @@ table .table_header_br th {
     background-color: #3C4044;
     padding: 0px;
     height: 8px;
-    border-right: none;
+    border-right: none !important;
     line-height: 8px;
     font-size: 8px;
 }
@@ -728,7 +735,9 @@ table td {
 table td:last-child {
     border-right: none;
 }
-
+.table_color td{
+    background-color: #f9f9f9
+}
 .ico_td {
     text-align: center;
 }
@@ -807,33 +816,239 @@ table td:last-child {
         Table size
    -------------------------------------------- */
 
-   .w32 {
-    width: 32%;
-   }
-   .w28 {
-    width: 28%;
-   }
-   .w26 {
-    width: 26%;
-   }
-   .w20 {
-    width: 20%;
-   }
-   .w18 {
-    width: 18%;
-   }
-   .w16 {
-    width: 16%;
-   }
-   .w14 {
-    width: 14%;
-   }
-   .w12 {
-    width: 12%;
-   }
-   .w11 {
-    width: 11%;
-   }
-   .w10 {
-    width: 10%;
-   }
+   .w32 {width: 32%;}
+   .w28 {width: 28%;}
+   .w26 {width: 26%;}
+   .w22 {width: 23%;}
+   .w22 {width: 22%;}
+   .w20 {width: 20%;}
+   .w18 {width: 18%;}
+   .w16 {width: 16%;}
+   .w15 {width: 15%;}
+   .w14 {width: 14%;}
+   .w12 {width: 12%;}
+   .w11 {width: 11%;}
+   .w10 {width: 10%;}
+   .w9 {width: 9%;}
+/* --------------------------------------------
+        Rates
+   -------------------------------------------- */
+
+.calculator_wr {
+    float: right;
+    margin-left: 5px;
+}
+.calculator_button {
+    display: block;
+    float: left;
+    height: 40px;
+    padding: 12px 15px;
+    padding-left: 40px;
+    background: #fff url(../images/ico-calculator.png) 13px 11px no-repeat;
+    margin-bottom: 10px;
+    border: none;
+    font: 14px/16px Arial,sans-serif;
+    text-decoration: none;
+    color: #3c4044;
+    outline: none;
+    cursor: pointer;
+    -moz-border-radius:4px 0 0 4px; /* Firefox */ 
+    -webkit-border-radius:4px 0 0 4px; /*Safari and chrome */ 
+    -khtml-border-radius:4px 0 0 4px; /*Linux browsers*/
+    border-radius:4px 0 0 4px; /*CSS3*/
+}
+.agreeing_pl {
+    display: block;
+    float: right;
+    height: 40px;
+    padding: 12px 15px;
+    padding-left: 35px;
+    background: #EAAC21 url(../images/ico-coordination.png) 10px 11px no-repeat;
+    margin-bottom: 10px;
+    border: none;
+    font: 14px/16px Arial,sans-serif;
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+    -moz-border-radius:0 4px 4px 0; /* Firefox */ 
+    -webkit-border-radius:0 4px 4px 0; /*Safari and chrome */ 
+    -khtml-border-radius:0 4px 4px 0; /*Linux browsers*/
+    border-radius:0 4px 4px 0; /*CSS3*/
+}
+
+/* --------------------------------------------
+        Users
+   -------------------------------------------- */
+.add_user_button_poz {
+    float: right;
+}
+.add_user_button {
+    display: block;
+    float: left;
+    height: 40px;
+    padding: 12px 15px;
+    padding-left: 40px;
+    background: #8BAF3A url(../images/ico-user-add.png) 13px 11px no-repeat;
+    margin-bottom: 10px;
+    border: none;
+    font: 14px/16px Arial,sans-serif;
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    -moz-border-radius:4px; /* Firefox */ 
+    -webkit-border-radius:4px; /*Safari and chrome */ 
+    -khtml-border-radius:4px; /*Linux browsers*/
+    border-radius:4px; /*CSS3*/
+}
+.add_user_button:hover{
+    background-color: #809B35;
+}
+
+/* --------------------------------------------
+        Journals papers
+   -------------------------------------------- */
+.back_box {
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.back_box a {
+    font: 15px/22px Arial,sans-serif;
+    color: #194E9B;
+    text-decoration: none;
+    font-weight: bold;
+}
+.back_box span {
+    border-bottom: 1px dashed #194E9B;
+}
+.back_box:hover span {
+    border-color: transparent;
+}
+.back_box strong {
+    font-size: 22px;
+}
+
+.status_button_poz {
+    float: right;
+}
+
+.status_button_ok {
+    display: block;
+    float: left;
+    height: 40px;
+    padding: 12px 15px;
+    padding-left: 40px;
+    background: #8BAF3A url(../images/ico-signup.png) 13px 11px no-repeat;
+    margin-bottom: 10px;
+    border: none;
+    font: 14px/16px Arial,sans-serif;
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    -moz-border-radius:4px; /* Firefox */ 
+    -webkit-border-radius:4px; /*Safari and chrome */ 
+    -khtml-border-radius:4px; /*Linux browsers*/
+    border-radius:4px; /*CSS3*/
+}
+.status_button_ok:hover{
+    background-color: #809B35;
+}
+
+.status_button_no {
+    display: block;
+    float: left;
+    height: 40px;
+    padding: 12px 15px;
+    padding-left: 40px;
+    background: #EF6100 url(../images/ico-signup_no.png) 13px 11px no-repeat;
+    margin-bottom: 10px;
+    border: none;
+    font: 14px/16px Arial,sans-serif;
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    -moz-border-radius:4px; /* Firefox */ 
+    -webkit-border-radius:4px; /*Safari and chrome */ 
+    -khtml-border-radius:4px; /*Linux browsers*/
+    border-radius:4px; /*CSS3*/
+}
+.status_button_no:hover{
+    background-color: #D15400;
+}
+.pad_l_10 {
+    padding-left: 10px;
+}
+
+.journal_table table {
+    table-layout: fixed;
+}
+
+.journal_table td {
+    border-bottom: none;
+    padding: 0;
+    font: 14px/20px Arial,sans-serif;
+}
+.journal_table td>div {
+    padding: 15px 25px;
+}
+.firct_col {
+    background-color: #F9F9F9;
+    border-right: 1px solid #e6e6e6;
+    width: 170px;
+    padding: 15px 15px !important;
+}
+.term_box {
+    background-color: #E6E6E6;
+    color: #666;
+    display: inline-block;
+    font-size: 12px;
+    padding: 6px 8px;
+    line-height: 12px;
+    margin-top: -2px;
+    -moz-border-radius:4px; /* Firefox */ 
+    -webkit-border-radius:4px; /*Safari and chrome */ 
+    -khtml-border-radius:4px; /*Linux browsers*/
+    border-radius:4px; /*CSS3*/
+}
+.commen_box {
+    background-color: #E6E6E6;
+    color: #666;
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 8px;
+    line-height: 12px;
+    margin-top: -2px;
+    -moz-border-radius:4px; /* Firefox */ 
+    -webkit-border-radius:4px; /*Safari and chrome */ 
+    -khtml-border-radius:4px; /*Linux browsers*/
+    border-radius:4px; /*CSS3*/
+}
+.journal_table th {
+    border: none;
+    padding: 8px 25px;
+}
+.w160px {
+    width: 160px;
+}
+.journal_table_ins td>div {
+    padding: 8px 25px;
+}
+.journals_papers_img_box {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.journals_papers_img_box img {
+    margin-right: 3px;
+}
+.ico-word {
+    background:  url(../images/ico-word.png) 0 0 no-repeat;
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+    display: inline-block;
+    white-space: nowrap;
+}
