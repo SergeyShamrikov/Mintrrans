@@ -32,7 +32,6 @@
         font: 14px/20px Arial,sans-serif;
         color:#3C4044;
         background:#F2F2F2;
-        min-width: 1024px;
     }
 
     *{
@@ -749,6 +748,14 @@ table td:last-child {
     display: inline-block;
     white-space: nowrap;
 }
+.ico-off {
+    background:  url(../images/ico-off.png) 0 0 no-repeat;
+    height: 18px;
+    padding-left: 25px;
+    margin-right: 10px;
+    display: inline-block;
+    white-space: nowrap;
+}
 .ico-plus {
     background:  url(../images/ico-plus.png) 0 0 no-repeat;
     height: 17px;
@@ -756,6 +763,7 @@ table td:last-child {
     margin-right: 10px;
     display: inline-block;
 }
+
 .drop_menu {
     cursor: pointer;
 }

@@ -1,17 +1,11 @@
 /*==================================RESPONSIVE LAYOUTS===============================================*/
 
 body {
-	min-width: 1024px !important;
+	min-width: 1024px;
 }
-/*header {
-	min-width: 1024px !important;
-	position: absolute !important;
-}
-#navigation_box {
-	position: absolute;
-}*/
 
-/*@media only screen and (max-width: 1024px) {
+
+@media only screen and (max-width: 992px) {
 
 
 .sub_logo {
@@ -37,72 +31,5 @@ body {
 	line-height: 14px;
 	padding: 10px 0 8px 23px;
 }
-}*/
-
-/*@media only screen and (max-width: 992px) {
-
-
-.sub_logo {
-	width: 175px;
-	line-height: 14px;
-	font-size: 12px;
-	margin-left: 16px;
-}
-.header_btn>* {
-	font-size: 14px;
-}
-table th {
-	padding: 0 10px;
-	font-size: 13px;
-	line-height: 15px;
-}
-table td {
-	padding: 7px 10px;
-	font-size: 12px;
-	line-height: 15px;
-}
-table td a {
-	font-size: 12px;
-	line-height: 15px;
-}
-table th span {
-	font-size: 11px;
-	line-height: 12px;
-}
-.pad_left {
-	padding-left: 35px;
-}
-.ico-plus-td  {
-    padding-left: 38px;
-    position: relative;
-}
-.ico-plus-td span {
-    position: absolute;
-    top: 7px;
-    left: 10px;
-}
-.nav_bottom {
-	display: none;
-}
-#navigation_box {
-	padding-bottom: 0;
 }
 
-.copyrite {
-	font-style: 12px;
-	line-height: 14px;
-	padding: 10px 0 8px 23px;
-}
-}
-
-
-@media only screen and (max-width: 767px) {
- body{min-width:767px;}
- .sub_logo {
- 	display: none;
- }
-}
-
-@media only screen and (max-width: 479px) {
- body{min-width:300px;}
-}*/
