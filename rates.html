@@ -18,7 +18,7 @@
 
         <!-- Libs CSS
         ============================================ -->
-
+        <link rel="stylesheet" href="plugins/scrollbar-plugin/scrollbar-plugin.css">
         
 
         <!-- Favicon
@@ -123,6 +123,7 @@
                         <div class="dragger"></div>
                     </div>
                 </div>
+                <a href="#" class="scrollUpBtn"></a> <a href="#" class="scrollDownBtn"></a>
             </div>
             
 
@@ -138,7 +139,9 @@
         <!-- - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->
 
         <div id="content">            
+            
 
+         <!-- - - - - - - - - - - - - - Advanced Filter - - - - - - - - - - - - - - - - -->
             <div class="width_245 alignleft mar_r_5">
                 <select>
                   <option>ОАО «Алексеевскдорстрой»</option>
@@ -182,6 +185,12 @@
                   
                 </select>
             </div>
+
+            <div class="box_s">
+                
+            </div>
+
+        <!-- - - - - - - - - - - - - - Advanced Filter - - - - - - - - - - - - - - - - -->
             <div class="clear"></div>
 
             <div class="search_box">
@@ -192,7 +201,7 @@
                 </form>
             </div>
 
-            <div class="">
+        <!-- - - - - - - - - - - - - - Primary table - - - - - - - - - - - - - - - - -->
               
 
                  <div class="table_open_wr">
@@ -200,30 +209,30 @@
                         <table>
                             <tbody> 
                             <tr class="table_header_br">
-                                <th>&nbsp;</th>
-                                <th>&nbsp;</th>
-                                <th>&nbsp;</th>
-                                <th>&nbsp;</th>
-                                <th>&nbsp;</th>
-                                <th>&nbsp;</th>
-                            </tr>
+                                <th class="w20">&nbsp;</th>
+                                <th class="w32">&nbsp;</th>
+                                <th class="w11">&nbsp;</th>
+                                <th class="w10">&nbsp;</th>
+                                <th class="w11">&nbsp;</th>
+                                <th class="w16">&nbsp;</th>
+                            </tr> 
                             <tr>
-                                <th width="20%"><div>Раздел / Шифр</div></th>
-                                <th width="32%"><div>Наименование</div>
+                                <th><div>Раздел / Шифр</div></th>
+                                <th><div>Наименование</div>
                                 </th>
-                                <th width="11%"><div>Измеритель</div>
+                                <th><div>Измеритель</div>
                                 </th>
-                                <th width="10%"><div>
+                                <th><div>
                                     Прямые затраты, <br>
                                         <span>млн руб.</span>
                                 </div>
                                 </th>
-                                <th width="11%"><div>
+                                <th><div>
                                     С накоплениями и прибылью, <br>
                                         <span>млн руб.</span>
                                 </div>
                                 </th>
-                                <th width="16%"><div>Статус</div>
+                                <th><div>Статус</div>
                                 </th>
                             </tr>
                             <tr class="table_header_br">
@@ -235,123 +244,131 @@
                                 <th>&nbsp;</th>
                             </tr>
                             <tr class="open_box">   
-                                <td><span class="ico-plus drop_menu"></span><strong>Раздел 1</strong></td>
+                                <td class="ico_plus_td"><span class="ico-plus drop_menu"></span><strong>Раздел 1</strong></td>
                                 <td><strong>Содержание земляного полотна и водоотвода</strong></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>
-                            <tr class="block_ins">   
-                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
-                                <td>Подсыпка обочин бульдозером</td>
-                                <td>1 000 м2</td>
-                                <td>201,48</td>
-                                <td>230</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
-                                <td>Уплотнение грунта</td>
-                                <td>100 м2</td>
-                                <td>598,85</td>
-                                <td>600</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
-                                <td>Планировка обочин механическим способом</td>
-                                <td>1 км прохода</td>
-                                <td></td>
-                                <td></td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
-                                <td>Планировка обочин вручную</td>
-                                <td>1 км прохода</td>
-                                <td></td>
-                                <td></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
-                                <td>Ремонт укрепления обочин</td>
-                                <td>1 000 м2</td>
-                                <td></td>
-                                <td></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
-                                <td>Планировка откосов</td>
-                                <td>1 000 м2</td>
-                                <td></td>
-                                <td></td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
-                                <td>Засыпка грунтом промоин и ям</td>
-                                <td>100 м2</td>
-                                <td></td>
-                                <td></td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
-                                <td>Подсыпка обочин бульдозером</td>
-                                <td>100 м2</td>
-                                <td></td>
-                                <td></td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
-                                <td>Уплотнение грунта   </td>
-                                <td>1 000 м2</td>
-                                <td></td>
-                                <td></td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
-                                <td>Планировка обочин механическим способом</td>
-                                <td>1 000 м2</td>
-                                <td></td>
-                                <td></td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
-                                <td>Планировка обочин вручную</td>
-                                <td>1 000 м2</td>
-                                <td></td>
-                                <td></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
-                                <td>Ремонт укрепления обочин</td>
-                                <td>1 000 м2</td>
-                                <td></td>
-                                <td></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
-                                <td>Планировка откосов</td>
-                                <td>1 000 м2</td>
-                                <td></td>
-                                <td></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
+                            <tr class="table_box_ins">
+                                <td colspan="6">
+                                    <div class="block_ins">
+                                        <table>
+                                            <tr>  
+                                                <td class="w20"><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
+                                                <td class="w32">Подсыпка обочин бульдозером</td>
+                                                <td class="w11">1 000 м2</td>
+                                                <td class="w10">201,48</td>
+                                                <td class="w11">230</td>
+                                                <td class="w16"><span class="ico-coordination"></span>Согласование</td>
+                                            </tr>
+                                            <tr>   
+                                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
+                                                <td>Уплотнение грунта</td>
+                                                <td>100 м2</td>
+                                                <td>598,85</td>
+                                                <td>600</td>
+                                                <td><span class="ico-coordination"></span>Согласование</td>
+                                            </tr>
+                                            <tr>   
+                                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
+                                                <td>Планировка обочин механическим способом</td>
+                                                <td>1 км прохода</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span class="ico-coordination"></span>Согласование</td>
+                                            </tr>
+                                            <tr>   
+                                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
+                                                <td>Планировка обочин вручную</td>
+                                                <td>1 км прохода</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
+                                                <td>Ремонт укрепления обочин</td>
+                                                <td>1 000 м2</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
+                                                <td>Планировка откосов</td>
+                                                <td>1 000 м2</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span class="ico-coordination"></span>Согласование</td>
+                                            </tr>
+                                            <tr>   
+                                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
+                                                <td>Засыпка грунтом промоин и ям</td>
+                                                <td>100 м2</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span class="ico-coordination"></span>Согласование</td>
+                                            </tr>
+                                            <tr>   
+                                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
+                                                <td>Подсыпка обочин бульдозером</td>
+                                                <td>100 м2</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span class="ico-coordination"></span>Согласование</td>
+                                            </tr>
+                                            <tr>   
+                                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
+                                                <td>Уплотнение грунта   </td>
+                                                <td>1 000 м2</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span class="ico-coordination"></span>Согласование</td>
+                                            </tr>
+                                            <tr>   
+                                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
+                                                <td>Планировка обочин механическим способом</td>
+                                                <td>1 000 м2</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span class="ico-coordination"></span>Согласование</td>
+                                            </tr>
+                                            <tr>   
+                                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
+                                                <td>Планировка обочин вручную</td>
+                                                <td>1 000 м2</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
+                                                <td>Ремонт укрепления обочин</td>
+                                                <td>1 000 м2</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td><span class="ico-plus"></span>ЭСНиЕРс-01-01-002</td>
+                                                <td>Планировка откосов</td>
+                                                <td>1 000 м2</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
                             </tr>
                             </tbody>
                         </table>
                      
                  </div>
 
-            </div>
+        <!-- - - - - - - - - - - - - - End Primary table - - - - - - - - - - - - - - - - -->
             
         </div>
 
@@ -382,10 +399,9 @@
 
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-
-        <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
-        <script src="js/scrollbar-plugin.js"></script>
-        <script src="js/jquery.mCustomScrollbar.js"></script>
+        <script type="text/javascript" src="plugins/scrollbar-plugin/jquery.mousewheel.min.js"></script>
+        <script src="plugins/scrollbar-plugin/scrollbar-plugin.js"></script>
+        <script src="plugins/scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
 
         
     </body>

@@ -11,14 +11,15 @@
         <meta name="keywords" content="">
         <meta name="description" content="">
 
+
         <!-- Mobile specific metas
         ============================================ -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=1024">
 
 
         <!-- Libs CSS
         ============================================ -->
-
+        <link rel="stylesheet" href="plugins/scrollbar-plugin/scrollbar-plugin.css">
         
 
         <!-- Favicon
@@ -123,6 +124,7 @@
                         <div class="dragger"></div>
                     </div>
                 </div>
+                <a href="#" class="scrollUpBtn"></a> <a href="#" class="scrollDownBtn"></a>
             </div>
             
 
@@ -138,7 +140,8 @@
         <!-- - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->
 
         <div id="content">            
-
+            
+        <!-- - - - - - - - - - - - - - Filter date - - - - - - - - - - - - - - - - -->
             <div class="width_125 alignleft mar_r_5">
                 <select>
                   <option>Январь</option>
@@ -177,34 +180,35 @@
                 </form>
             </div>
 
-            <div class="">
-
+        <!-- - - - - - - - - - - - - - End Filter date - - - - - - - - - - - - - - - - -->
+            
+        <!-- - - - - - - - - - - - - - Primary table - - - - - - - - - - - - - - - - -->
                  <div class="table_open_wr">
                      
                         <table>
                             <tbody>
                             <tr class="table_header_br">
-                                <th>&nbsp;</th>
-                                <th>&nbsp;</th>
-                                <th>&nbsp;</th>
-                                <th>&nbsp;</th>
-                                <th>&nbsp;</th>
+                                <th class="w28">&nbsp;</th>
+                                <th class="w18">&nbsp;</th>
+                                <th class="w18">&nbsp;</th>
+                                <th class="w18">&nbsp;</th>
+                                <th class="w18">&nbsp;</th>
                             </tr>
                             <tr>
-                                <th width="28%">Подрядчик / Договор</th>
-                                <th width="18%">Хакимов И.Р. <br>
+                                <th>Подрядчик / Договор</th>
+                                <th>Хакимов И.Р. <br>
                                     <span>Отдел контроля качества
                                         и приемки работ</span>
                                 </th>
-                                <th width="18%">Маннапов Х.А. <br>
+                                <th>Маннапов Х.А. <br>
                                     <span>Отдел текущего ремонта
                                     и содержания автодорог</span>
                                 </th>
-                                <th width="18%">Галиуллин А.Т. <br>
+                                <th>Галиуллин А.Т. <br>
                                     <span>Отдел содержания мостовых
                                     сооружений и труб</span>
                                 </th>
-                                <th width="18%">Трофименко А.В. <br>
+                                <th>Трофименко А.В. <br>
                                     <span>Заместитель
                                     директора</span>
                                 </th>
@@ -218,242 +222,322 @@
                             </tr>
 
                             <tr class="open_box">   
-                                <td><span class="ico-plus drop_menu"></span><a href="">ОАО «Алексеевскдорстрой»</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
+                                <td class="ico_plus_td"><span class="ico-plus drop_menu"></span><a href="">ОАО «Алексеевскдорстрой»</a></td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                                <td><span class="ico-coordination">Согласование</span></td>
                             </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Альметьевский УАД</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Азнакаевский УАД</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Бугульминский УАД</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Заинский УАД</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Елабужский филиал</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                            </tr>
-
-
-                            <tr class="open_box">   
-                                <td><span class="ico-plus drop_menu"></span><a href="">ОАО «Татавтодор»</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Азнакаевский УАД</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Бугульминский УАД</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Заинский УАД</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Елабужский филиал</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
+                            <tr class="table_box_ins">
+                                <td colspan="5">
+                                    <div class="block_ins">
+                                        <table>
+                                            <tr>   
+                                                <td class="pad_left w28"><a href="">Альметьевский УАД</a></td>
+                                                <td class="w18"><span class="ico-approved">Утверждено</span></td>
+                                                <td class="w18"><span class="ico-approved">Утверждено</span></td>
+                                                <td class="w18"><span class="ico-approved">Утверждено</span></td>
+                                                <td class="w18"><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Азнакаевский УАД</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Бугульминский УАД</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Заинский УАД</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Елабужский филиал</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
                             </tr>
 
 
                             <tr class="open_box">   
-                                <td><span class="ico-plus drop_menu"></span><a href="">ООО «Брус»</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
+                                <td class="ico_plus_td"><span class="ico-plus drop_menu"></span><a href="">ОАО «Татавтодор»</a></td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                                <td><span class="ico-coordination">Согласование</span></td>
                             </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Азнакаевский УАД</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Бугульминский УАД</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Заинский УАД</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Елабужский филиал</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                            </tr>
-
-
-                            <tr class="open_box">   
-                                <td><span class="ico-plus drop_menu"></span><a href="">ООО «Волгадорстрой»</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Азнакаевский УАД</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Бугульминский УАД</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Заинский УАД</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Елабужский филиал</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
+                            <tr class="table_box_ins">
+                                <td colspan="5">
+                                    <div class="block_ins">
+                                        <table>
+                                            <tr>   
+                                                <td class="pad_left w28"><a href="">Альметьевский УАД</a></td>
+                                                <td class="w18"><span class="ico-approved">Утверждено</span></td>
+                                                <td class="w18"><span class="ico-approved">Утверждено</span></td>
+                                                <td class="w18"><span class="ico-approved">Утверждено</span></td>
+                                                <td class="w18"><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Азнакаевский УАД</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Бугульминский УАД</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Заинский УАД</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Елабужский филиал</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
                             </tr>
 
 
                             <tr class="open_box">   
-                                <td><span class="ico-plus drop_menu"></span><a href="">ООО «МДСУ-1»</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
+                                <td class="ico_plus_td"><span class="ico-plus drop_menu"></span><a href="">ООО «Брус»</a></td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                                <td><span class="ico-coordination">Согласование</span></td>
                             </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Азнакаевский УАД</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Бугульминский УАД</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Заинский УАД</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
-                            </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Елабужский филиал</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
+                            <tr class="table_box_ins">
+                                <td colspan="5">
+                                    <div class="block_ins">
+                                        <table>
+                                            <tr>   
+                                                <td class="pad_left w28"><a href="">Альметьевский УАД</a></td>
+                                                <td class="w18"><span class="ico-approved">Утверждено</span></td>
+                                                <td class="w18"><span class="ico-approved">Утверждено</span></td>
+                                                <td class="w18"><span class="ico-approved">Утверждено</span></td>
+                                                <td class="w18"><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Азнакаевский УАД</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Бугульминский УАД</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Заинский УАД</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Елабужский филиал</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
                             </tr>
 
 
                             <tr class="open_box">   
-                                <td><span class="ico-plus drop_menu"></span><a href="">ООО «Татнефтедор»</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
+                                <td class="ico_plus_td"><span class="ico-plus drop_menu"></span><a href="">ООО «Волгадорстрой»</a></td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                                <td><span class="ico-coordination">Согласование</span></td>
                             </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Азнакаевский УАД</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
+                            <tr class="table_box_ins">
+                                <td colspan="5">
+                                    <div class="block_ins">
+                                        <table>
+                                            <tr>   
+                                                <td class="pad_left w28"><a href="">Альметьевский УАД</a></td>
+                                                <td class="w18"><span class="ico-approved">Утверждено</span></td>
+                                                <td class="w18"><span class="ico-approved">Утверждено</span></td>
+                                                <td class="w18"><span class="ico-approved">Утверждено</span></td>
+                                                <td class="w18"><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Азнакаевский УАД</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Бугульминский УАД</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Заинский УАД</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Елабужский филиал</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
                             </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Бугульминский УАД</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
+
+
+                            <tr class="open_box">   
+                                <td class="ico_plus_td"><span class="ico-plus drop_menu"></span><a href="">ООО «МДСУ-1»</a></td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                                <td><span class="ico-coordination">Согласование</span></td>
                             </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Заинский УАД</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-coordination"></span>Согласование</td>
+                            <tr class="table_box_ins">
+                                <td colspan="5">
+                                    <div class="block_ins">
+                                        <table>
+                                            <tr>   
+                                                <td class="pad_left w28"><a href="">Альметьевский УАД</a></td>
+                                                <td class="w18"><span class="ico-approved">Утверждено</span></td>
+                                                <td class="w18"><span class="ico-approved">Утверждено</span></td>
+                                                <td class="w18"><span class="ico-approved">Утверждено</span></td>
+                                                <td class="w18"><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Азнакаевский УАД</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Бугульминский УАД</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Заинский УАД</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Елабужский филиал</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
                             </tr>
-                            <tr class="block_ins">   
-                                <td class="pad_left"><a href="">Елабужский филиал</a></td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
-                                <td><span class="ico-approved"></span>Утверждено</td>
+
+
+                            <tr class="open_box">   
+                                <td class="ico_plus_td"><span class="ico-plus drop_menu"></span><a href="">ООО «Татнефтедор»</a></td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                                <td><span class="ico-coordination">Согласование</span></td>
+                            </tr>
+                            <tr class="table_box_ins">
+                                <td colspan="5">
+                                    <div class="block_ins">
+                                        <table>
+                                            <tr>   
+                                                <td class="pad_left w28"><a href="">Альметьевский УАД</a></td>
+                                                <td class="w18"><span class="ico-approved">Утверждено</span></td>
+                                                <td class="w18"><span class="ico-approved">Утверждено</span></td>
+                                                <td class="w18"><span class="ico-approved">Утверждено</span></td>
+                                                <td class="w18"><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Азнакаевский УАД</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Бугульминский УАД</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Заинский УАД</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-coordination">Согласование</span></td>
+                                            </tr>
+                                            <tr>   
+                                                <td class="pad_left"><a href="">Елабужский филиал</a></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                                <td><span class="ico-approved">Утверждено</span></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
                             </tr>
 
 
                             </tbody>
                         </table>
-                
-                     
-                    
                  </div>
 
-            </div>
+        <!-- - - - - - - - - - - - - - End Primary table - - - - - - - - - - - - - - - - -->    
             
         </div>
 
@@ -484,10 +568,9 @@
 
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-
-        <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
-        <script src="js/scrollbar-plugin.js"></script>
-        <script src="js/jquery.mCustomScrollbar.js"></script>
+        <script type="text/javascript" src="plugins/scrollbar-plugin/jquery.mousewheel.min.js"></script>
+        <script src="plugins/scrollbar-plugin/scrollbar-plugin.js"></script>
+        <script src="plugins/scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
 
         
     </body>

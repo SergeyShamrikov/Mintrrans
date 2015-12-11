@@ -32,6 +32,7 @@
         font: 14px/20px Arial,sans-serif;
         color:#3C4044;
         background:#F2F2F2;
+        min-width: 1024px;
     }
 
     *{
@@ -214,6 +215,7 @@ select {
   -ms-appearance: none;
   appearance: none!important;
   outline: none;
+  cursor: pointer;
   -moz-border-radius:4px; /* Firefox */ 
     -webkit-border-radius:4px; /*Safari and chrome */ 
     -khtml-border-radius:4px; /*Linux browsers*/
@@ -599,30 +601,6 @@ select::-ms-expand {
 
 /* ------------------------------------------------
 
-    6.1 scrollbar-plugin
-
------------------------------------------------- */
-#mcs_container{position:relative;  height:100%;}
-#mcs_container .customScrollBox{position:relative; height:100%; }
-#mcs_container .customScrollBox .container{position:relative; width:100%; top:0; float:left;}
-#mcs_container .customScrollBox .content{clear:both;}
-#mcs_container .customScrollBox .content p{padding:0 5px; margin:10px 0; color:#fff; font-family:Verdana, Geneva, sans-serif; font-size:13px; line-height:20px;}
-#mcs_container .customScrollBox .content p.alt{padding:10px 5px; margin:10px 0; color:#fff; font-family:Georgia, "Times New Roman", Times, serif; font-size:17px; line-height:19px; color:#999;}
-#mcs_container .customScrollBox img{border:5px solid #fff;}
-#mcs_container .dragger_container{position:absolute; width:2px; height:80%; right: 5px; top: 15%;   cursor:pointer;
- cursor:s-resize; z-index: 3;}
- /*тут поправить скрол высота в %*/
-#mcs_container .dragger{position:absolute; width:2px; height:180px; background:#C1C1C1; text-align:center; line-height:60px; color:#666; overflow:hidden; cursor:pointer; -moz-border-radius:2px; -khtml-border-radius:2px; -webkit-border-radius:2px; border-radius:2px;}
-#mcs_container .dragger_pressed{position:absolute; width:4px; margin-left:-1px; height:60px; background:#999; text-align:center; line-height:60px; color:#666; overflow:hidden; -moz-border-radius:4px; -khtml-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; cursor:s-resize;}
-#mcs_container .scrollUpBtn,#mcs_container .scrollDownBtn{position:absolute; display:inline-block; width:14px; height:15px; margin-right:12px; text-decoration:none; right:0; filter:alpha(opacity=20); -moz-opacity:0.20; -khtml-opacity:0.20; opacity:0.20;}
-#mcs_container .scrollUpBtn{top:16px; background:url(mcs_btnUp.png) center center no-repeat;}
-#mcs_container .scrollDownBtn{bottom:12px; background:url(mcs_btnDown.png) center center no-repeat;}
-#mcs_container .scrollUpBtn:hover,#mcs_container .scrollDownBtn:hover{filter:alpha(opacity=60); -moz-opacity:0.60; -khtml-opacity:0.60; opacity:0.60;}
-
-
-
-/* ------------------------------------------------
-
     7. Content
 
 ------------------------------------------------ */
@@ -659,7 +637,7 @@ select::-ms-expand {
     }
 
     .small_menu .copyrite{
-        left: 56px;
+        left: 57px;
     }
 
     .copyrite_title{
@@ -751,22 +729,25 @@ table td {
 table td:last-child {
     border-right: none;
 }
-table td span {
-    color: #194e9b;
+
+.ico_td {
+    text-align: center;
 }
 .ico-approved {
     background:  url(../images/ico-approved.png) 0 0 no-repeat;
     height: 18px;
-    width: 18px;
+    padding-left: 25px;
     margin-right: 10px;
     display: inline-block;
+    white-space: nowrap;
 }
 .ico-coordination {
     background:  url(../images/ico-coordination.png) 0 0 no-repeat;
     height: 18px;
-    width: 18px;
+    padding-left: 25px;
     margin-right: 10px;
     display: inline-block;
+    white-space: nowrap;
 }
 .ico-plus {
     background:  url(../images/ico-plus.png) 0 0 no-repeat;
@@ -780,22 +761,15 @@ table td span {
 }
 
 .block_ins {
-display: none;  
-border-bottom: 1px solid transparent;
+    display: none;  
+    border-bottom: 1px solid transparent;
 }
 
 .show_icon {
     margin-top: 1px;
     background-position: 0 -17px;
 }
-.show_icon_2 {
-    margin-top: 1px;
-    background-position: 0 -17px;
-}
 .open_bg td{
-    background-color: #f9f9f9;
-}
-.open_bg_2 td{
     background-color: #f9f9f9;
 }
 .block_ins td{
@@ -805,5 +779,53 @@ border-bottom: 1px solid transparent;
 .pad_left{
     padding-left: 70px;
 }
+.table_box_ins>td {
+    padding: 0;
+    border: none;
+}
+.table_open_wr table {
+    table-layout: fixed;
+}
+.ico_plus_td  {
+    padding-left: 48px;
+    position: relative;
+}
+.ico_plus_td span {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+/* --------------------------------------------
+        Table size
+   -------------------------------------------- */
 
-
+   .w32 {
+    width: 32%;
+   }
+   .w28 {
+    width: 28%;
+   }
+   .w26 {
+    width: 26%;
+   }
+   .w20 {
+    width: 20%;
+   }
+   .w18 {
+    width: 18%;
+   }
+   .w16 {
+    width: 16%;
+   }
+   .w14 {
+    width: 14%;
+   }
+   .w12 {
+    width: 12%;
+   }
+   .w11 {
+    width: 11%;
+   }
+   .w10 {
+    width: 10%;
+   }
