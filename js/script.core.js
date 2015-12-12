@@ -10,6 +10,7 @@
 
 			self.menu();
 			self.table_open();
+			self.help_box();
 		},
 
 		windowLoad: function(){
@@ -43,6 +44,18 @@
 
             $(".drop_menu").click(function(){
                 $(this).toggleClass("show_icon").closest(".open_box").toggleClass("open_bg").next(".table_box_ins").find(".block_ins").stop().slideToggle("medium");
+            });
+
+		},
+
+		help_box : function(){
+
+		    $(".hilp_button_ins").on('click', function () {
+  			 $(this).parent().toggleClass("hilp_active");
+            });
+
+            $(".ico-close").on('click', function () {
+  			 $(this).closest(".hilp_active").removeClass("hilp_active");
             });
 
 		}

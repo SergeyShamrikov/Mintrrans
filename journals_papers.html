@@ -19,7 +19,8 @@
         <!-- Libs CSS
         ============================================ -->
         <link rel="stylesheet" href="plugins/scrollbar-plugin/scrollbar-plugin.css">
-        
+        <link rel="stylesheet" href="plugins/datepicker/datePicker.css">
+        <link rel="stylesheet" type="text/css" href="plugins/fancy_box/source/jquery.fancybox.css?v=2.1.5" media="screen" />
 
         <!-- Favicon
         ============================================ -->
@@ -105,7 +106,7 @@
                             <ul  class="navigation">
                             
                                 <li><a href="index.html"><i class="menu_icon menu_acceptance"></i><span>Приемка работ</span></a></li>
-                                <li class="current"><a href="journals_papers.html"><i class="menu_icon menu_journals"></i><span>Журналы работ</span></a></li>
+                                <li  class="current"><a href="journals_papers.html"><i class="menu_icon menu_journals"></i><span>Журналы работ</span></a></li>
                                 <li><a href="documentation.html"><i class="menu_icon menu_documentation"></i><span>Документы</span></a></li>
                                 <li><a href="roads.html"><i class="menu_icon menu_roads"></i><span>Дороги</span></a></li>
                                 <li><a href="contractors.html"><i class="menu_icon menu_contractors"></i><span>Подрядчики</span></a></li>
@@ -141,13 +142,38 @@
         <div id="content">            
             
 
-        <!-- - - - - - - - - - - - - - Back button - - - - - - - - - - - - - - - - -->
-            <div class="back_box pad_l_10">
-                <a href=""><strong>&larr;</strong> <span>Журнал работ</span></a>
+        <!-- - - - - - - - - - - - - - Advanced Filter - - - - - - - - - - - - - - - - -->
+            <div class="width_245 alignleft mar_r_5">
+                <select>
+                  <option>ОАО «Алексеевскдорстрой»</option>
+                  <option>ОАО «Татавтодор»</option>
+                  <option>ООО «Брус»</option>
+                  <option>ООО «Волгадорстрой»</option>
+                  <option>ООО «МДСУ-1»</option>
+                  <option>ООО «Татнефтедор»</option>
+                </select>
+            </div>
+
+            <div class="width_75 alignleft mar_r_5">
+                <select>
+                  <option>2011</option>
+                  <option>2012</option>
+                  <option>2013</option>
+                  <option>2014</option>
+                  <option>2015</option>
+                  <option>2016</option>
+                  
+                </select>
             </div>
 
 
-        <!-- - - - - - - - - - - - - - End Back button  - - - - - - - - - - - - - - - - -->
+
+            <div class="datepicker_box width_125 alignleft mar_r_5">
+                <input  id="inputDate1" class="datepicker_inp" value="" name="T1" size="20" placeholder="дд-мм-гггг" />
+            </div>
+            
+
+        <!-- - - - - - - - - - - - - - End Advanced Filter - - - - - - - - - - - - - - - - -->
 
         <!-- - - - - - - - - - - - - - Status button  - - - - - - - - - - - - - - - - -->
 
@@ -160,121 +186,239 @@
             
         <!-- - - - - - - - - - - - - - End Status button  - - - - - - - - - - - - - - - - -->
 
+            
+
+            <div class="search_box">
+                <form class="search" action="">
+                    <input type="submit" value="" />
+                    <input type="text" value="" placeholder="Поиск" />
+                    <div class="clear"></div>
+                </form>
+            </div>
 
         <!-- - - - - - - - - - - - - - Primary table - - - - - - - - - - - - - - - - -->
-              
-            <h3 class="pad_l_10">Скашивание травы и срезка кустарников на обочинах, откосах и резервах</h3>
 
 
-             <div class="journal_table">
-                 
-                <table>
-                    <tbody> 
-                        <tr>
-                            <td class="firct_col"><strong>Дата</strong></td>
-                            <td><div>21.09.2015 - 22.09.2015 <span class="term_box">2 дня</span></div></td>
-                        </tr>
-                        <tr>
-                            <td class="firct_col"><strong>Дорога</strong></td>
-                            <td><div>«Агрыз-Красный бор» - Исенбаево - Старое Сляково - Черново <span class="term_box">210 км</span></div></td>
-                        </tr>
-                        <tr>
-                            <td class="firct_col"><strong>Отрезок дороги</strong></td>
-                            <td><div>15 км - 25 км <span class="term_box">10 км</span></div></td>
-                        </tr>
-                        <tr>
-                            <td class="firct_col"><strong>Работа</strong></td>
-                            <td><div>ЭСНиЕРс-01-01-002 Скашивание травы и срезка кустарников на обочинах, откосах и резервах</div></td>
-                        </tr>
-                        <tr>
-                            <td class="firct_col"><strong>Норма</strong></td>
-                            <td><div>01-01-011-2 80 л.с., ширина скашивания до 2х метров</div></td>
-                        </tr>
-                        <tr>
-                            <td class="firct_col"><strong>Объем</strong></td>
-                            <td><div>1 000 м2</div></td>
-                        </tr>
-                        <tr>
-                            <td class="firct_col"><strong>Машины</strong></td>
-                            <td>
-                                <table class="journal_table_ins">
-                                    <tbody>  
-                                        <tr>
-                                            <th>Машина / Механизм</th>
-                                            <th class="w160px">Объем норм.</th>
-                                            <th class="w160px">Пробег в ГИС</th>
-                                        </tr>
+                 <div class="table_open_wr">
+                     
+                        <table>
+                            <tbody> 
+                            <tr class="table_header_br">
+                                <th class="w9">&nbsp;</th>
+                                <th class="w20">&nbsp;</th>
+                                <th class="w18">&nbsp;</th>
+                                <th class="w21">&nbsp;</th>
+                                <th class="w10">&nbsp;</th>
+                                <th class="w8">&nbsp;</th>
+                                <th class="w14">&nbsp;</th>
+                            </tr> 
+                            <tr>
+                                <th>Дата</th>
+                                <th>Дорога</th>
+                                <th>Шифр</th>
+                                <th>Наименование работы</th>
+                                <th>Файлы</th>
+                                <th>Объем</th>
+                                <th>Подпись / Статус</th>
+                            </tr>
+                            <tr class="table_header_br">
+                                <th>&nbsp;</th>
+                                <th>&nbsp;</th>
+                                <th>&nbsp;</th>
+                                <th>&nbsp;</th>
+                                <th>&nbsp;</th>
+                                <th>&nbsp;</th>
+                                <th>&nbsp;</th>
+                            </tr>
+                            <tr class="table_color">  
+                                <td>22.09.2015</td>
+                                <td>«Агрыз-Красный бор» - Салауши</td>
+                                <td><input type="checkbox" checked="checked" class="checkbox" id="checkbox1" /><label for="checkbox1">ЭСНиЕРс-01-01-002</label></td>
+                                <td>Подсыпка обочин бульдозером</td>
+                                <td><a href="">4 файла</a></td>
+                                <td>300 м2</td>
+                                <td>
+                                    <a href="" class="status_button_ok button_smoll mar_r_5">Утв</a>
+                                    <a href="" class="status_button_no button_smoll">Откл</a>
+                                </td>
+                            </tr>
 
-                                        <tr>
-                                            <td><div>Тракторы на пневмоколесном ходу при работе на других видах строительства 40 кВт (55 л.с.)</div> </td>
-                                            <td><div>300 маш.ч.</div></td>
-                                            <td><div>1 200 м</div></td>
-                                        </tr>
-                                        <tr>
-                                            <td><div>Тракторы на пневмоколесном ходу при работе на других видах строительства 40 кВт (55 л.с.)</div> </td>
-                                            <td><div>300 маш.ч.</div></td>
-                                            <td><div><span class="orange_text">Нет трекера</span></div></td>
-                                        </tr>
+                            <tr>  
+                                <td></td>
+                                <td></td>
+                                <td><input type="checkbox" checked="checked" class="checkbox" id="checkbox2" /><label for="checkbox2">ЭСНиЕРс-01-01-002</label></td>
+                                <td>Уплотнение грунта</td>
+                                <td class="center">
+                                    <a href="" class="ico-word"></a>
+                                    <a href="" class="ico-excel"></a>
+                                    <a href="" class="ico-image"></a>
+                                </td>
+                                <td>1 000 м2</td>
+                                <td></td>
+                            </tr>
 
-                                    </tbody>
-                                 </table>
-                            </td>
-                        </tr>
+                            <tr>  
+                                <td></td>
+                                <td></td>
+                                <td><input type="checkbox" checked="checked" class="checkbox" id="checkbox3" /><label for="checkbox3">ЭСНиЕРс-01-01-002</label></td>
+                                <td>Планировка обочин механическим способом</td>
+                                <td class="center">
+                                    <a href="" class="ico-word"></a>
+                                </td>
+                                <td>1 000 м2</td>
+                                <td></td>
+                            </tr>
 
-                        <tr>
-                            <td class="firct_col"><strong>Материалы</strong></td>
-                            <td>
-                                <table class="journal_table_ins">
-                                    <tbody>  
-                                        <tr>
-                                            <th class="w160px">Шифр</th>
-                                            <th>Материал</th>
-                                            <th class="w160px">Объем норм.</th>
-                                            <th class="w160px">Объем заявл.</th>
-                                        </tr>
+                            <tr>  
+                                <td>11.09.2015</td>
+                                <td>Биктово-Кудашево</td>
+                                <td><input type="checkbox" checked="checked" class="checkbox" id="checkbox4" /><label for="checkbox4">ЭСНиЕРс-01-01-002</label></td>
+                                <td>Планировка обочин вручную</td>
+                                <td class="center">
+                                    
+                                </td>
+                                <td>500 м2</td>
+                                <td></td>
+                            </tr>
 
-                                        <tr>
-                                            <td><div>000-001</div></td>
-                                            <td><div>Песок</div></td>
-                                            <td><div>1 200 м3</div></td>
-                                            <td><div>1 000 м3</div></td>
-                                        </tr>
-                                        <tr>
-                                            <td><div>000-001</div></td>
-                                            <td><div>Щебень</div></td>
-                                            <td><div>100 т</div></td>
-                                            <td><div>98 т</div></td>
-                                        </tr>
+                            <tr>  
+                                <td></td>
+                                <td></td>
+                                <td><input type="checkbox" checked="checked" class="checkbox" id="checkbox5" /><label for="checkbox5">ЭСНиЕРс-01-01-002</label></td>
+                                <td>Ремонт укрепления обочин</td>
+                                <td class="center">
+                                    <a href="" class="ico-image"></a>
+                                </td>
+                                <td>750 м2</td>
+                                <td></td>
+                            </tr>
 
-                                    </tbody>
-                                 </table>
-                            </td>
-                        </tr>
+                            <tr>  
+                                <td></td>
+                                <td></td>
+                                <td><input type="checkbox" checked="checked" class="checkbox" id="checkbox6" /><label for="checkbox6">ЭСНиЕРс-01-01-002</label></td>
+                                <td>Планировка откосов</td>
+                                <td class="center">
+                                    <a href="" class="ico-word"></a>
+                                    <span class="hilp_button image_gal"><span class="ico-image hilp_button_ins"></span> 
+                                        <span class="hilp_ins">
+                                            <span class="ico-close"></span>
+                                            <span class="hilp_arrow"></span>
+                                            <p>
+                                                <span class="image_gal_wr">
+                                                    <a class="fancybox" href="images/journals_papers_img_1.jpg" data-fancybox-group="gallery" title="img_1"><span class="ico-zoom"></span><img src="images/journals_papers_img_1.jpg" height="65" width="65" alt=""></a>
+                                                    
+                                                    <a class="fancybox" href="images/journals_papers_img_2.jpg" data-fancybox-group="gallery" title="img_2"><span class="ico-zoom"></span><img src="images/journals_papers_img_2.jpg" height="65" width="65" alt=""></a>
+                                                    
+                                                    <a class="fancybox" href="images/journals_papers_img_3.jpg" data-fancybox-group="gallery" title="img_3"><span class="ico-zoom"></span><img src="images/journals_papers_img_3.jpg" height="65" width="65" alt=""></a>
+                                                </span>
 
-                        <tr>
-                            <td class="firct_col"><strong>Комментарий</strong></td>
-                            <td><div><span class="commen_box"><em>Два дня косили траву на палящем солнце. Необычайная выдалась погода.</em></span></div></td>
-                        </tr>
-
-                        <tr>
-                            <td class="firct_col"><strong>Файлы</strong></td>
-                            <td>
-                                <div>
-                                    <a href=""><span class="ico-word"></span>Приказ на внеплановое выполнение работ.doc</a>                               
-                                    <span class="journals_papers_img_box">
-                                        <img src="images/journals_papers_img_1.jpg" height="120" width="120" alt="">
-                                        <img src="images/journals_papers_img_2.jpg" height="120" width="120" alt="">
-                                        <img src="images/journals_papers_img_3.jpg" height="120" width="120" alt="">
+                                                <a href="" class="add_img">+15</a>
+                                            </p>
+                                        </span>
                                     </span>
-                                </div>
 
-                            </td>
-                        </tr>
+                                </td>
+                                <td>1 000 м2</td>
+                                <td></td>
+                            </tr>
 
-                    </tbody>
-                </table>
-                 
-             </div>
+                            <tr>  
+                                <td></td>
+                                <td>«Агрыз-Красный бор» - Янга Аул - Новые Бизяки</td>
+                                <td><input type="checkbox" class="checkbox" id="checkbox7" /><label for="checkbox7">ЭСНиЕРс-01-01-002</label></td>
+                                <td>Засыпка грунтом промоин и ям</td>
+                                <td class="center"></td>
+                                <td>1 000 м2</td>
+                                <td></td>
+                            </tr>
+                            <tr>  
+                                <td></td>
+                                <td></td>
+                                <td><input type="checkbox" class="checkbox" id="checkbox8" /><label for="checkbox8">ЭСНиЕРс-01-01-002</label></td>
+                                <td>Подсыпка обочин бульдозером</td>
+                                <td class="center"></td>
+                                <td>100 м2</td>
+                                <td>
+                                    <span class="ico-off hilp_button"><span class="hilp_button_ins">Отклонено</span> 
+                                        <span class="hilp_ins">
+                                            <span class="ico-close"></span>
+                                            <span class="hilp_arrow"></span>
+                                            Считаем данные объемы завышенными, т.к. данные работы уже выполнялись в 2014 году <br>
+                                            <a href="" class="status_button_ok button_smoll hilp_button_cont">Исправить отчет</a>
+                                        </span>
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>  
+                                <td>10.09.2015</td>
+                                <td>«Терси-Сукман» - Новое Аккузино</td>
+                                <td><input type="checkbox" class="checkbox" id="checkbox9" /><label for="checkbox9">ЭСНиЕРс-01-01-002</label></td>
+                                <td>Уплотнение грунта</td>
+                                <td class="center"></td>
+                                <td>100 м2</td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                            </tr>
+
+                            <tr>  
+                                <td></td>
+                                <td></td>
+                                <td><input type="checkbox" class="checkbox" id="checkbox10" /><label for="checkbox10">ЭСНиЕРс-01-01-002</label></td>
+                                <td>Планировка обочин вручную</td>
+                                <td class="center"></td>
+                                <td>1 000 м2</td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                            </tr>
+
+                            <tr>  
+                                <td></td>
+                                <td></td>
+                                <td><input type="checkbox" class="checkbox" id="checkbox11" /><label for="checkbox11">ЭСНиЕРс-01-01-002</label></td>
+                                <td>Ремонт укрепления обочин</td>
+                                <td class="center"></td>
+                                <td>1 000 м2</td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                            </tr>
+
+                            <tr>  
+                                <td></td>
+                                <td></td>
+                                <td><input type="checkbox" class="checkbox" id="checkbox12" /><label for="checkbox12">ЭСНиЕРс-01-01-002</label></td>
+                                <td>Планировка откосов</td>
+                                <td class="center"></td>
+                                <td>1 000 м2</td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                            </tr>
+
+                            <tr>  
+                                <td>09.09.2015</td>
+                                <td>Старое Сляково - Утяганово</td>
+                                <td><input type="checkbox" class="checkbox" id="checkbox13" /><label for="checkbox13">ЭСНиЕРс-01-01-002</label></td>
+                                <td>Ремонт укрепления обочин</td>
+                                <td class="center"></td>
+                                <td>1 000 м2</td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                            </tr>
+
+                            <tr>  
+                                <td></td>
+                                <td></td>
+                                <td><input type="checkbox" class="checkbox" id="checkbox14" /><label for="checkbox14">ЭСНиЕРс-01-01-002</label></td>
+                                <td>Прием и разравнивание грунтапри выгрузке его из автомобилей-самосвалов</td>
+                                <td class="center"></td>
+                                <td>1 000 м2</td>
+                                <td><span class="ico-approved">Утверждено</span></td>
+                            </tr>
+
+                            
+
+                            
+
+                            </tbody>
+                        </table>
+                     
+                 </div>
 
         <!-- - - - - - - - - - - - - - End Primary table - - - - - - - - - - - - - - - - -->
             
@@ -296,6 +440,10 @@
         ============================================ -->
         <script type="text/javascript" src="js/jquery.js"></script>
 
+         <!-- Add fancyBox main JS and CSS files -->
+        <script type="text/javascript" src="plugins/fancy_box/source/jquery.fancybox.js?v=2.1.5"></script>
+        
+
         <!-- Theme files
         ============================================ -->
         <script src="js/script.core.js"></script>
@@ -305,12 +453,24 @@
         <!-- scrollbar-plugin
         ============================================ -->
 
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+        <script type="text/javascript" src="plugins/scrollbar-plugin/jquery.min.js"></script>
+        <script src="plugins/scrollbar-plugin/jquery-ui.min.js"></script>
         <script type="text/javascript" src="plugins/scrollbar-plugin/jquery.mousewheel.min.js"></script>
         <script src="plugins/scrollbar-plugin/scrollbar-plugin.js"></script>
         <script src="plugins/scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
 
-        
+         <!-- datepicker-plugin
+        ============================================ -->
+
+        <script type="text/javascript" src="plugins/datepicker/date.js"></script>
+        <script type="text/javascript" src="plugins/datepicker/jquery.datePicker-2.1.2.js"></script>
+        <script type="text/javascript" src="plugins/datepicker/date.plugins.js"></script>
+
+
+
+       
+
+
     </body>
 </html>

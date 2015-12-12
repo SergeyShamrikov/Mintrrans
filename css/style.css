@@ -110,12 +110,20 @@
 
    .reg {text-transform:uppercase}
 
+   .center {
+    text-align: center;
+   }
+    
+    .width_50pr {
+        width: 50% !important;
+    }
    .width_125 {
     width: 125px;
     }
     .width_75 {
         width: 75px;
     }
+
     .width_245 {
     width: 245px;
     }
@@ -125,7 +133,7 @@
     .width_275 {
     width: 275px;
     }
-    .mar_r_5 {
+    #content .mar_r_5 {
         margin-right: 5px;
     }
 
@@ -190,7 +198,146 @@
    /* --------------------------------------------
         4.3. Buttons
    -------------------------------------------- */
- 
+    .calculator_wr {
+        float: right;
+        margin-left: 5px;
+    }
+    .calculator_button {
+        display: block;
+        float: left;
+        height: 40px;
+        padding: 12px 15px;
+        padding-left: 40px;
+        background: #fff url(../images/ico-calculator.png) 13px 11px no-repeat;
+        margin-bottom: 10px;
+        border: none;
+        font: 14px/16px Arial,sans-serif;
+        text-decoration: none;
+        color: #3c4044;
+        outline: none;
+        cursor: pointer;
+        -moz-border-radius:4px 0 0 4px; /* Firefox */ 
+        -webkit-border-radius:4px 0 0 4px; /*Safari and chrome */ 
+        -khtml-border-radius:4px 0 0 4px; /*Linux browsers*/
+        border-radius:4px 0 0 4px; /*CSS3*/
+    }
+    .calculator_button:hover {
+        opacity: 0.8;
+    }
+    .calculator_button:active {
+        opacity: 1;
+    }
+    .agreeing_pl {
+        display: block;
+        float: right;
+        height: 40px;
+        padding: 12px 15px;
+        padding-left: 35px;
+        background: #EAAC21 url(../images/ico-coordination-2.png) 10px 11px no-repeat;
+        margin-bottom: 10px;
+        border: none;
+        font: 14px/16px Arial,sans-serif;
+        text-decoration: none;
+        color: #fff;
+        outline: none;
+        -moz-border-radius:0 4px 4px 0; /* Firefox */ 
+        -webkit-border-radius:0 4px 4px 0; /*Safari and chrome */ 
+        -khtml-border-radius:0 4px 4px 0; /*Linux browsers*/
+        border-radius:0 4px 4px 0; /*CSS3*/
+    }
+    a.agreeing_pl:hover {
+        background-color: #f4b942;
+    }
+    a.agreeing_pl:active {
+        background-color: #e29a1b;
+    }
+
+    .status_button_ok {
+        display: block;
+        float: left;
+        height: 40px;
+        padding: 12px 15px;
+        padding-left: 40px;
+        background: #8BAF3A url(../images/ico-signup.png) 13px 11px no-repeat;
+        margin-bottom: 10px;
+        border: none;
+        font: 14px/16px Arial,sans-serif;
+        text-decoration: none;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+        -moz-border-radius:4px; /* Firefox */ 
+        -webkit-border-radius:4px; /*Safari and chrome */ 
+        -khtml-border-radius:4px; /*Linux browsers*/
+        border-radius:4px; /*CSS3*/
+    }
+    .status_button_ok:hover{
+        background-color: #a3c14f;
+    }
+    .status_button_ok:active{
+        background-color: #84a038;
+    }
+
+    .status_button_no {
+        display: block;
+        float: left;
+        height: 40px;
+        padding: 12px 15px;
+        padding-left: 40px;
+        background: #EF6100 url(../images/ico-signup_no.png) 13px 11px no-repeat;
+        margin-bottom: 10px;
+        border: none;
+        font: 14px/16px Arial,sans-serif;
+        text-decoration: none;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+        -moz-border-radius:4px; /* Firefox */ 
+        -webkit-border-radius:4px; /*Safari and chrome */ 
+        -khtml-border-radius:4px; /*Linux browsers*/
+        border-radius:4px; /*CSS3*/
+    }
+    .status_button_no:hover{
+        background-color: #f47a27;
+    }
+    .status_button_no:active{
+        background-color: #dd600b;
+    }
+    .button_smoll {
+        height: 28px;
+        padding: 6px 7px;
+        background-image: none;
+        
+    }
+    .add_user_button {
+        display: block;
+        float: left;
+        height: 40px;
+        padding: 12px 15px;
+        padding-left: 40px;
+        background: #8BAF3A url(../images/ico-user-add.png) 13px 11px no-repeat;
+        margin-bottom: 10px;
+        border: none;
+        font: 14px/16px Arial,sans-serif;
+        text-decoration: none;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+        -moz-border-radius:4px; /* Firefox */ 
+        -webkit-border-radius:4px; /*Safari and chrome */ 
+        -khtml-border-radius:4px; /*Linux browsers*/
+        border-radius:4px; /*CSS3*/
+    }
+    .add_user_button:hover{
+        background-color: #a3c14f;
+    }
+    .add_user_button:active{
+        background-color: #84a038;
+    }
+    .dis {
+        background-color: #e6e6e6 !important;
+    }
+
    /* --------------------------------------------
         4.4. Tables
    -------------------------------------------- */
@@ -198,6 +345,22 @@
    /* --------------------------------------------
         4.5. Forms
    -------------------------------------------- */
+
+input:not([type="radio"]):not([type="checkbox"]) {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  border: none;
+  font: 14px/16px Arial,sans-serif;
+  color: #3c4044;
+  outline: none;
+  -moz-border-radius:4px; /* Firefox */ 
+    -webkit-border-radius:4px; /*Safari and chrome */ 
+    -khtml-border-radius:4px; /*Linux browsers*/
+    border-radius:4px; /*CSS3*/
+}
+
 
 select {
   width: 100%;
@@ -232,7 +395,44 @@ select::-ms-expand {
 }
 
 
+.checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
 
+.checkbox + label {
+  cursor: pointer;
+}
+
+.checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox:not(checked) + label {
+  position: relative; 
+  padding: 0 0 0 24px; 
+}
+
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background:  url(../images/checkbox.png) 0 -16px no-repeat;
+}
+
+.checkbox:checked + label:before {
+  background-position: 0 0;
+}
+
+::-webkit-input-placeholder {color:#3c4044;}
+::-moz-placeholder          {color:#3c4044;}
+:-moz-placeholder           {color:#3c4044;}
+:-ms-input-placeholder      {color:#3c4044;}
 
 /* ------------------------------------------------
 
@@ -821,6 +1021,7 @@ table td:last-child {
    .w26 {width: 26%;}
    .w22 {width: 23%;}
    .w22 {width: 22%;}
+   .w21 {width: 21%;}
    .w20 {width: 20%;}
    .w18 {width: 18%;}
    .w16 {width: 16%;}
@@ -830,80 +1031,9 @@ table td:last-child {
    .w11 {width: 11%;}
    .w10 {width: 10%;}
    .w9 {width: 9%;}
-/* --------------------------------------------
-        Rates
-   -------------------------------------------- */
+   .w8 {width: 8%;}
 
-.calculator_wr {
-    float: right;
-    margin-left: 5px;
-}
-.calculator_button {
-    display: block;
-    float: left;
-    height: 40px;
-    padding: 12px 15px;
-    padding-left: 40px;
-    background: #fff url(../images/ico-calculator.png) 13px 11px no-repeat;
-    margin-bottom: 10px;
-    border: none;
-    font: 14px/16px Arial,sans-serif;
-    text-decoration: none;
-    color: #3c4044;
-    outline: none;
-    cursor: pointer;
-    -moz-border-radius:4px 0 0 4px; /* Firefox */ 
-    -webkit-border-radius:4px 0 0 4px; /*Safari and chrome */ 
-    -khtml-border-radius:4px 0 0 4px; /*Linux browsers*/
-    border-radius:4px 0 0 4px; /*CSS3*/
-}
-.agreeing_pl {
-    display: block;
-    float: right;
-    height: 40px;
-    padding: 12px 15px;
-    padding-left: 35px;
-    background: #EAAC21 url(../images/ico-coordination.png) 10px 11px no-repeat;
-    margin-bottom: 10px;
-    border: none;
-    font: 14px/16px Arial,sans-serif;
-    text-decoration: none;
-    color: #fff;
-    outline: none;
-    -moz-border-radius:0 4px 4px 0; /* Firefox */ 
-    -webkit-border-radius:0 4px 4px 0; /*Safari and chrome */ 
-    -khtml-border-radius:0 4px 4px 0; /*Linux browsers*/
-    border-radius:0 4px 4px 0; /*CSS3*/
-}
 
-/* --------------------------------------------
-        Users
-   -------------------------------------------- */
-.add_user_button_poz {
-    float: right;
-}
-.add_user_button {
-    display: block;
-    float: left;
-    height: 40px;
-    padding: 12px 15px;
-    padding-left: 40px;
-    background: #8BAF3A url(../images/ico-user-add.png) 13px 11px no-repeat;
-    margin-bottom: 10px;
-    border: none;
-    font: 14px/16px Arial,sans-serif;
-    text-decoration: none;
-    color: #fff;
-    outline: none;
-    cursor: pointer;
-    -moz-border-radius:4px; /* Firefox */ 
-    -webkit-border-radius:4px; /*Safari and chrome */ 
-    -khtml-border-radius:4px; /*Linux browsers*/
-    border-radius:4px; /*CSS3*/
-}
-.add_user_button:hover{
-    background-color: #809B35;
-}
 
 /* --------------------------------------------
         Journals papers
@@ -933,51 +1063,7 @@ table td:last-child {
     float: right;
 }
 
-.status_button_ok {
-    display: block;
-    float: left;
-    height: 40px;
-    padding: 12px 15px;
-    padding-left: 40px;
-    background: #8BAF3A url(../images/ico-signup.png) 13px 11px no-repeat;
-    margin-bottom: 10px;
-    border: none;
-    font: 14px/16px Arial,sans-serif;
-    text-decoration: none;
-    color: #fff;
-    outline: none;
-    cursor: pointer;
-    -moz-border-radius:4px; /* Firefox */ 
-    -webkit-border-radius:4px; /*Safari and chrome */ 
-    -khtml-border-radius:4px; /*Linux browsers*/
-    border-radius:4px; /*CSS3*/
-}
-.status_button_ok:hover{
-    background-color: #809B35;
-}
 
-.status_button_no {
-    display: block;
-    float: left;
-    height: 40px;
-    padding: 12px 15px;
-    padding-left: 40px;
-    background: #EF6100 url(../images/ico-signup_no.png) 13px 11px no-repeat;
-    margin-bottom: 10px;
-    border: none;
-    font: 14px/16px Arial,sans-serif;
-    text-decoration: none;
-    color: #fff;
-    outline: none;
-    cursor: pointer;
-    -moz-border-radius:4px; /* Firefox */ 
-    -webkit-border-radius:4px; /*Safari and chrome */ 
-    -khtml-border-radius:4px; /*Linux browsers*/
-    border-radius:4px; /*CSS3*/
-}
-.status_button_no:hover{
-    background-color: #D15400;
-}
 .pad_l_10 {
     padding-left: 10px;
 }
@@ -1048,7 +1134,147 @@ table td:last-child {
     background:  url(../images/ico-word.png) 0 0 no-repeat;
     height: 18px;
     width: 18px;
-    margin-right: 5px;
+    margin-right: 1px;
     display: inline-block;
-    white-space: nowrap;
+}
+
+.ico-excel {
+    background:  url(../images/ico-excel.png) 0 0 no-repeat;
+    height: 18px;
+    width: 18px;
+    margin-right: 1px;
+    display: inline-block;
+}
+.ico-image {
+    background:  url(../images/ico-image.png) 0 0 no-repeat;
+    height: 18px;
+    width: 18px;
+    margin-right: 1px;
+    display: inline-block;
+}
+
+.hilp_button {
+    position: relative;
+}
+.hilp_ins {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    white-space: normal;
+    background-color: #fff;
+    box-shadow: 0 0 10px 2px #ccc;
+    padding: 10px 30px 10px 10px;
+    width: 250px;
+    font-size: 12px;
+    line-height: 14px;
+    display: none;
+    
+}
+.hilp_active .hilp_ins{
+    display: block;
+}
+.ico-close {
+    background:  url(../images/ico-close.png) 0 0 no-repeat;
+    height: 12px;
+    width: 12px;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.hilp_button_ins {
+    cursor: pointer;
+    color: #194e9b;
+    text-decoration: underline;
+}
+.hilp_button_ins:hover {
+    text-decoration: none;
+}
+.hilp_arrow {
+    position: absolute;
+    content: '';
+    right: 10px;
+    top: -4px;
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #fff;
+}
+.hilp_button_cont {
+    float: right;
+    margin-bottom: 0;
+    margin-top: 5px;
+    margin-right: -20px;
+} 
+
+.image_gal {
+    text-align: left;
+}
+.image_gal .hilp_ins {
+    position: absolute;
+    right: -5px;
+    top: 25px;
+    width: 270px;
+    padding-right: 10px;
+}
+.add_img {
+    font-size: 14px;
+    margin-top: 25px;
+    margin-left: 10px;
+    display: inline-block;
+    
+}
+.image_gal_wr {
+    display: inline-block;
+    width: 205px;
+    height: 65px;
+    overflow: hidden;
+    
+}
+
+.fancybox {
+    position: relative;
+}
+.ico-zoom {
+    background:  url(../images/ico-zoom.png) 0 0 no-repeat;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    display: none;
+}
+.fancybox:hover .ico-zoom{
+    display: block;
+}
+
+.content_box {
+    background-color: #fff;
+    padding: 15px;
+}
+.add_user_box .add_user_text {
+    vertical-align: middle;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+.add_user_form {
+    width: 350px;
+}
+.content_box select {
+    background-color: #f9f9f9;
+    border: 1px solid #e6e6e6;
+}
+.content_box input:not([type="radio"]):not([type="checkbox"])  {
+    background-color: #f9f9f9;
+    border: 1px solid #e6e6e6;
+}
+.add_user_box {
+    width: auto;
+    
+}
+.add_user_box td {
+    border: none;
+    padding: 0;
 }
