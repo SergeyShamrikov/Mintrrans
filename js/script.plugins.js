@@ -7,7 +7,12 @@
 		/* ------------------------------------------------
 				Simple image gallery. Uses default settings
 		------------------------------------------------ */
-		$('.fancybox').fancybox();
+		
+		if($('.fancybox').length){
+
+			$('.fancybox').fancybox();
+		
+		}
 		
         /* ------------------------------------------------
 				End Simple image gallery. Uses default settings
@@ -20,7 +25,12 @@
 		/* ------------------------------------------------
 				phone masked input
 		------------------------------------------------ */
+		
+		if($("#phone").length){
+			
 			$("#phone").mask("+7(999) 999-9999");
+			
+		}
 
         /* ------------------------------------------------
 				End phone masked input

@@ -1028,7 +1028,7 @@
 		TEXT_NEXT_YEAR		:	'Следующий год',
 		TEXT_NEXT_MONTH		:	'Следующий месяц',
 		TEXT_CLOSE			:	'Закрыть',
-		TEXT_CHOOSE_DATE	:	'<span class="ico-datepicker"><img border="0" title="" src="ico-datepicker.png"></span> '
+		TEXT_CHOOSE_DATE	:	'<span class="ico-datepicker"><img border="0" title="" src="images/ico-datepicker.png"></span> '
 	};
 	// version
 	$.dpVersion = '$Id: jquery.datePicker.js 15 2008-12-17 04:40:18Z kelvin.luck $';
