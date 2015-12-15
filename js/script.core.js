@@ -90,13 +90,8 @@
 				
 				var tabscol = $('.tabs__caption').find('li').length;
 					tabscol = tabscol + 1;
-						
-			
 			$(this).prev('.tabs__caption').append('<li class="tabs_buton">' + tabscol + '</li>');
-
 			var clon_tabs = $('.clon_tabs>div').clone();	
-
-
 			$(this).parents('.tabs').append(clon_tabs);
 			
 			});
