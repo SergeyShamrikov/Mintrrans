@@ -9,7 +9,9 @@ body {
 	float: left;
 	margin-left: 0;
 }
-
+.enter_wr {
+	background-position: -200px 0;
+}
 }
 @media only screen and (max-width: 992px) {
 
@@ -36,6 +38,10 @@ body {
 	font-style: 12px;
 	line-height: 14px;
 	padding: 10px 0 8px 23px;
+}
+.enter_wr {
+	background-image: none;
+	
 }
 }
 
