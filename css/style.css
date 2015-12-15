@@ -114,23 +114,29 @@
     text-align: center;
    }
     
-    .width_50pr {
+    #content .width_50pr {
         width: 50% !important;
     }
-   .width_125 {
+    #content .width_100pr {
+        width: 100% !important;
+    }
+   #content .width_125 {
     width: 125px;
     }
-    .width_75 {
+    #content .width_75 {
         width: 75px;
     }
 
-    .width_245 {
+    #content .width_245 {
     width: 245px;
     }
-    .width_115 {
+    #content .width_230 {
+    width: 230px;
+    }
+    #content .width_115 {
     width: 115px;
     }
-    .width_275 {
+    #content .width_275 {
     width: 275px;
     }
     #content .mar_r_5 {
@@ -337,6 +343,7 @@
     .dis {
         background-color: #e6e6e6 !important;
     }
+    
 
    /* --------------------------------------------
         4.4. Tables
@@ -434,6 +441,12 @@ select::-ms-expand {
 :-moz-placeholder           {color:#3c4044;}
 :-ms-input-placeholder      {color:#3c4044;}
 
+
+input:not([type="radio"]):not([type="checkbox"]).dis  {
+    background-color: #f2f2f2 !important;
+    color: #999 !important;
+    border: 1px solid #e6e6e6 !important;
+}
 /* ------------------------------------------------
 
     5. Header
@@ -810,6 +823,7 @@ select::-ms-expand {
 
 ------------------------------------------------ */
     #content{
+        position: relative;
         padding: 78px 22px 66px 248px;
         -webkit-transition: padding 0.5s;
         -o-transition: padding 0.5s;
@@ -882,6 +896,7 @@ select::-ms-expand {
     -moz-border-radius:4px; /* Firefox */ 
     -webkit-border-radius:4px; /*Safari and chrome */ 
     -khtml-border-radius:4px; /*Linux browsers*/
+    border-radius:4px;
 }
 .central .search input.selected{
     background: #87d300;
@@ -1218,6 +1233,7 @@ table td:last-child {
     top: 25px;
     width: 270px;
     padding-right: 10px;
+    z-index: 2;
 }
 .add_img {
     font-size: 14px;
@@ -1254,6 +1270,7 @@ table td:last-child {
     background-color: #fff;
     padding: 15px;
 }
+
 .add_user_box .add_user_text {
     vertical-align: middle;
     padding-right: 20px;
@@ -1272,9 +1289,152 @@ table td:last-child {
 }
 .add_user_box {
     width: auto;
-    
 }
 .add_user_box td {
     border: none;
     padding: 0;
 }
+.status_button_no_w225 {
+    width: 225px;
+    padding-left: 59px;
+    background-position: 30px 11px;
+}
+
+.work_table td {
+    border: none;
+    padding: 0;
+}
+.work_table .work_table_text {
+    padding-right: 15px;
+    width: 200px;
+    vertical-align: top;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.work_table .work_table_text_ins {
+    padding-right: 15px;
+    width: 100px;
+    vertical-align: middle;
+    padding-bottom: 10px;
+    text-align: right;
+}
+.two_line_text {
+    padding-top: 0 !important;
+}
+.work_table .work_table_text_cont {
+    padding-right: 35px;
+    position: relative; 
+}
+.add_button {
+    cursor: pointer;
+    position: absolute;
+    bottom: 17px;
+    right: 3px;
+    width: 26px;
+    height: 26px;
+    background: #fff url(../images/ico-add.png) 0 0 no-repeat;
+    z-index: 2;
+}
+.clon_cont {
+    position: relative;
+    display: block;
+}
+.delete_button {
+    cursor: pointer;
+    position: absolute;
+    bottom: 17px;
+    right: -32px;
+    width: 26px;
+    height: 26px;
+    background: #fff  url(../images/ico-delete.png) 0 0 no-repeat;
+}
+.tabs table div {
+    overflow: inherit;
+}
+.tabs .add_button, .tabs .delete_button {
+    background-color: #f2f2f2;
+}
+.clon_tabs {
+    display: none;
+    
+}
+
+.tabs__content {
+  display: none; 
+}
+.tabs__content.active {
+  display: block; 
+}
+.tabs li, .add_tabs {
+    cursor: pointer;
+}
+.tabs__caption {
+    float: left;
+}
+
+.tabs__caption li, .add_tabs {
+    color: #9a9a9a;
+    margin-right: 3px;
+    line-height: 35px;
+    text-align: center;
+    width: 55px;
+    height: 35px;
+    display: block;
+    float: left;
+    background-color: #f9f9f9;
+    -moz-border-radius:4px 4px 0 0; /* Firefox */ 
+    -webkit-border-radius:4px 4px 0 0; /*Safari and chrome */ 
+    -khtml-border-radius:4px 4px 0 0; /*Linux browsers*/
+    border-radius:4px 4px 0 0; /*CSS3*/
+}
+.tabs__caption li.active {
+    background-color: #f2f2f2;
+    color: #3c4044;
+}
+.tabs__content {
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+.tabs__content td {
+    background-color: #f2f2f2;
+}
+.tabs__content .work_table_text {
+    width: 185px;
+}
+
+.work_table_text_cont .col_form_sm {
+    width: 105px;
+    padding-right: 5px;
+}
+.work_table_text_cont .col_form_lg {
+    padding-right: 5px;
+}
+.work_table_text_cont .col_form_sm_con {
+    padding-top: 10px;
+    width: 55px;
+    text-align: center;
+}
+.work_table_text_cont .search input[type="submit"] {
+    border-right: none;
+    -moz-border-radius:4px 0 0 4px; /* Firefox */ 
+    -webkit-border-radius:4px 0 0 4px; /*Safari and chrome */ 
+    -khtml-border-radius:4px 0 0 4px; /*Linux browsers*/
+    border-radius:4px  0 0 4px;
+}
+
+
+
+.content_box_left {
+    padding-right: 265px;
+}
+.content_box_right {
+     position: absolute;
+     width: 225px;
+     right: 22px;
+     top: 115px;
+}
+
+.matching_forms {
+
+}
+
