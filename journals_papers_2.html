@@ -19,7 +19,7 @@
         <!-- Libs CSS
         ============================================ -->
         <link rel="stylesheet" href="plugins/scrollbar-plugin/scrollbar-plugin.css">
-        
+        <link rel="stylesheet" type="text/css" href="plugins/fancy_box/source/jquery.fancybox.css?v=2.1.5" media="screen" />
 
         <!-- Favicon
         ============================================ -->
@@ -262,12 +262,13 @@
                                 <div>
                                     <a href=""><span class="ico-word mar_r_5"></span>Приказ на внеплановое выполнение работ.doc</a>                               
                                     <span class="journals_papers_img_box">
-                                        <img src="images/journals_papers_img_1.jpg" height="120" width="120" alt="">
-                                        <img src="images/journals_papers_img_2.jpg" height="120" width="120" alt="">
-                                        <img src="images/journals_papers_img_3.jpg" height="120" width="120" alt="">
+                                        <a class="fancybox" href="images/journals_papers_img_1.jpg" data-fancybox-group="gallery1" title="img_1"><span class="ico-zoom"></span><img src="images/journals_papers_img_1.jpg" height="120" width="120" alt=""></a>
+                                        
+                                        <a class="fancybox" href="images/journals_papers_img_2.jpg" data-fancybox-group="gallery1" title="img_2"><span class="ico-zoom"></span><img src="images/journals_papers_img_2.jpg" height="120" width="120" alt=""></a>
+                                        
+                                        <a class="fancybox" href="images/journals_papers_img_3.jpg" data-fancybox-group="gallery1" title="img_3"><span class="ico-zoom"></span><img src="images/journals_papers_img_3.jpg" height="120" width="120" alt=""></a>
                                     </span>
                                 </div>
-
                             </td>
                         </tr>
 
@@ -295,6 +296,10 @@
         <!-- Include Libs & Plugins
         ============================================ -->
         <script type="text/javascript" src="js/jquery.js"></script>
+
+        <!-- Add fancyBox main JS and CSS files -->
+        <script type="text/javascript" src="plugins/fancy_box/source/jquery.fancybox.js?v=2.1.5"></script>
+        
 
         <!-- Theme files
         ============================================ -->

@@ -340,6 +340,32 @@
     .add_user_button:active{
         background-color: #84a038;
     }
+    .resend {
+        display: block;
+        float: left;
+        height: 40px;
+        padding: 12px 15px;
+        padding-left: 40px;
+        background: #3C4044 url(../images/ico-resend.png) 13px 11px no-repeat;
+        margin-bottom: 10px;
+        border: none;
+        font: 14px/16px Arial,sans-serif;
+        text-decoration: none;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+        -moz-border-radius:4px; /* Firefox */ 
+        -webkit-border-radius:4px; /*Safari and chrome */ 
+        -khtml-border-radius:4px; /*Linux browsers*/
+        border-radius:4px; /*CSS3*/
+    }
+    .resend:hover{
+        background-color: #464B4F;
+    }
+    .resend:active{
+        background-color: #2D3033;
+    }
+
     .dis {
         background-color: #e6e6e6 !important;
     }
@@ -980,6 +1006,11 @@ table td:last-child {
     display: inline-block;
     white-space: nowrap;
 }
+/*td:last-child .ico-off, td:last-child .ico-coordination, td:last-child .ico-approved{
+    width: 100%;
+    overflow: hidden;
+}*/
+
 .ico-plus {
     background:  url(../images/ico-plus.png) 0 0 no-repeat;
     height: 17px;
@@ -1142,6 +1173,10 @@ table td:last-child {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.journals_papers_img_box .ico-zoom {
+    top: 45px;
+    left: 45px;
+}
 .journals_papers_img_box img {
     margin-right: 3px;
 }
@@ -1299,7 +1334,17 @@ table td:last-child {
     padding-left: 59px;
     background-position: 30px 11px;
 }
-
+.resend_w225 {
+    width: 225px;
+    padding-left: 59px;
+    background-position: 30px 11px;
+}
+.status_button_ok_w225 {
+    width: 225px;
+    padding-left: 32px;
+    padding-right: 5px;
+    background-position: 8px 11px;
+}
 .work_table td {
     border: none;
     padding: 0;
@@ -1503,13 +1548,16 @@ table td:last-child {
      width: 225px;
      right: 22px;
      top: 115px;
+     padding-bottom: 50px;
 }
 .matching_forms {
+    background-color: #fff;
     -moz-border-radius:4px; /* Firefox */ 
     -webkit-border-radius:4px; /*Safari and chrome */ 
     -khtml-border-radius:4px; /*Linux browsers*/
     border-radius:4px; /*CSS3*/
     overflow: hidden;
+    margin-bottom: 15px;
 }
 .matching_forms_header {
     background-color: #e0e1e1;
@@ -1517,10 +1565,57 @@ table td:last-child {
     padding: 13px 5px;
 
 }
-.matching_forms_bottom {
+.matching_forms_bottom_approved {
     text-align: center;
     padding: 13px 5px;
     font-size: 16px;
     color: #fff;
     background: #8BAF3A url(../images/ico-signup.png) 48px 14px no-repeat;
+}
+.matching_forms_bottom_off {
+    text-align: center;
+    padding: 13px 5px;
+    font-size: 16px;
+    color: #fff;
+    background: #EF6100 url(../images/ico-signup_no.png) 42px 14px no-repeat;
+}
+.matching_forms_bottom_resend {
+    text-align: center;
+    padding: 13px 5px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3C4044;
+}
+.matching_forms_cont {
+    padding: 16px 12px 2px 12px;
+}
+.matching_forms_cont li {
+    padding-bottom: 16px;
+    overflow: hidden;
+}
+.matching_forms_cont li span {
+    float: right;
+    padding-left: 25px;
+    margin-right: 0;
+}
+.matching_forms_cont li em {
+    width: 130px;
+    float: left;
+    font-style: normal;
+}
+.matching_forms_doc {
+    padding: 10px 12px 2px 12px;
+    overflow: hidden;
+}
+.matching_forms_doc li {
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+.matching_forms_doc em {
+    width: 170px;
+    float: right;
+    font-style: normal;
+}
+.matching_forms_doc span {
+    margin-top: 2px;
 }
