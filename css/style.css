@@ -1922,3 +1922,10 @@ textarea {
 .table_box_ins .block_ins_3  .tree_line_2 {
   left: 58px;
 }
+
+/* --------------------------------------------
+        contract_new
+   -------------------------------------------- */
+.add_user_form_2 {
+  width: 450px;
+}

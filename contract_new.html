@@ -19,8 +19,6 @@
         <!-- Libs CSS
         ============================================ -->
         <link rel="stylesheet" href="plugins/scrollbar-plugin/scrollbar-plugin.css">
-        <link rel="stylesheet" href="plugins/datepicker/datePicker.css">
-        <link rel="stylesheet" type="text/css" href="plugins/fancy_box/source/jquery.fancybox.css?v=2.1.5" media="screen" />
         
 
         <!-- Favicon
@@ -111,10 +109,10 @@
                                 <li><a href="documentation.html"><i class="menu_icon menu_documentation"></i><span>Документы</span></a></li>
                                 <li><a href="roads.html"><i class="menu_icon menu_roads"></i><span>Дороги</span></a></li>
                                 <li><a href="contractors.html"><i class="menu_icon menu_contractors"></i><span>Подрядчики</span></a></li>
-                                <li class="current"><a href="jobs_types.html"><i class="menu_icon menu_types_jobs"></i><span>Виды работ</span></a></li>
+                                <li><a href="jobs_types.html"><i class="menu_icon menu_types_jobs"></i><span>Виды работ</span></a></li>
                                 <li><a href="rates.html"><i class="menu_icon menu_rates"></i><span>Расценки</span></a></li>
                                 <li><a href="construction_price.html"><i class="menu_icon menu_stroytsena"></i><span>Стройцена</span></a></li>
-                                <li><a href="users.html"><i class="menu_icon menu_users"></i><span>Пользователи</span></a></li>
+                                <li class="current"><a href="users.html"><i class="menu_icon menu_users"></i><span>Пользователи</span></a></li>
                                 <li><a href="areas.html"><i class="menu_icon menu_areas"></i><span>Районы</span></a></li>
                             
                             </ul>
@@ -146,7 +144,7 @@
        
         <!-- - - - - - - - - - - - - - Back button - - - - - - - - - - - - - - - - -->
             <div class="back_box pad_l_10">
-                <a href=""><strong>&larr;</strong> <span>Список работ</span></a>
+                <a href=""><strong>&larr;</strong> <span>Список пользователей</span></a>
             </div>
             <div class="clear"></div>
 
@@ -154,7 +152,7 @@
         <!-- - - - - - - - - - - - - - End Back button  - - - - - - - - - - - - - - - - -->
 
             
-            <h3 class="alignleft pad_l_10">Добавление нового вида работ</h3>
+            <h3 class="alignleft pad_l_10">Добавление нового пользователя</h3>
 
             <div class="alignright">
                 <a href="" class="status_button_ok">Сохранить</a>
@@ -165,268 +163,95 @@
 
         <!-- - - - - - - - - - - - - - Add User Form - - - - - - - - - - - - - - - - -->
             <div class="content_box">
-
-                <div class="jobs_types_left_box">
-                    <div class="work_table">
+                
+                <div class="add_user_box">
                     <div class="display_tr">
-                        <div class="display_td work_table_text"><strong>Дата</strong></div>
-                        <div class="display_td work_table_text_cont">
-                            <div class="display_table">
-                                <div class="display_tr">
-                                    <div class="display_td width_100pr">
-                                        <div class="datepicker_box width_125 alignleft mar_r_5">
-                                            <input  id="inputDate1" class="datepicker_inp" value="" name="T1" size="20" placeholder="дд-мм-гггг" />
-                                        </div>
-                                    </div>
-                                    <div class="display_td col_form_sm_con"><strong class="mar_r_5">Время</strong></div>
-                                    <div class="display_td">
-                                        <p class="mar_r_5">
-                                            <input class="time_form_w" type="text" value="">
-                                        </p>
-                                    </div>
-                                    <div class="display_td">
-                                        <p class="mar_r_5">_</p>
-                                    </div>
-                                    <div class="display_td">
-                                        <input class="time_form_w" type="text" value="">
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="display_td add_user_text">
+                            <strong>Наименование организации</strong>
+                        </div>
+                        <div class="display_td add_user_form_2">
+                            <select>
+                                <option>ОАО «Татавтодор»</option>
+                                <option>ОАО «Татавтодор 2»</option>
+                                <option>ОАО «Татавтодор 3»</option>
+                                <option>ОАО «Татавтодор 4»</option>
+                                <option>КГУ «Главтатдортранс»</option>
+                            </select>
                         </div>
                     </div>
+
                     <div class="display_tr">
-                        <div class="display_td work_table_text"><strong>Дорога</strong></div>
-                        <div class="display_td work_table_text_cont">
+                        <div class="display_td add_user_text">
+                            <strong>Филиал</strong>
+                        </div>
+                        <div class="display_td add_user_form_2">
                             <select>
-                              <option></option>
-                              <option>Дорога 1</option>
-                              <option>Дорога 2</option>
-                              <option>Дорога 3</option>
+                              <option>Выберите филиал</option>
+                              <option>Филиал 1</option>
+                              <option>Филиал 2</option>
+                              <option>Филиал 3</option>
                             </select> 
                         </div>
                     </div>
+
                     <div class="display_tr">
-                        <div class="display_td work_table_text"><strong>Отрезок дороги</strong></div>
-                        <div class="display_td work_table_text_cont">
-                            <div class="display_table width_260">
-                                <div class="display_tr">
-                                    <div class="display_td">
-                                        <p class="mar_r_5">
-                                            <input class="" type="text" value="">
-                                        </p>
-                                    </div>
-                                    <div class="display_td">
-                                        <p class="mar_r_5">_</p>
-                                    </div>
-                                    <div class="display_td">
-                                        <p class="mar_r_5">
-                                            <input class="" type="text" value="">
-                                        </p>
-                                    </div>
-                                    <div class="display_td col_form_sm_con_2">
-                                        <p>км</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="display_td add_user_text">
+                            <strong>Участок</strong>
                         </div>
-                    </div>
-                    <div class="display_tr">
-                        <div class="display_td work_table_text"><strong>Работа</strong></div>
-                        <div class="display_td work_table_text_cont">
+                        <div class="display_td add_user_form_2">
                             <select>
-                              <option></option>
-                              <option>Работа 1</option>
-                              <option>Работа 2</option>
-                              <option>Работа 3</option>
+                              <option>Выберите участок</option>
+                              <option>Участок 1</option>
+                              <option>Участок 2</option>
+                              <option>Участок 3</option>
                             </select> 
                         </div>
                     </div>
+
                     <div class="display_tr">
-                        <div class="display_td work_table_text"><strong>Норма</strong></div>
-                        <div class="display_td work_table_text_cont">
-                            <select>
-                              <option></option>
-                              <option>Норма 1</option>
-                              <option>Норма 2</option>
-                              <option>Норма 3</option>
+                        <div class="display_td add_user_text">
+                            <strong>Роль</strong>
+                        </div>
+                        <div class="display_td add_user_form_2">
+                            <select class="width_50pr">
+                              <option>Сотрудник подрядчика</option>
+                              <option>Сотрудник 1</option>
+                              <option>Сотрудник 2</option>
+                              <option>Сотрудник 3</option>
                             </select> 
                         </div>
                     </div>
-                    <div class="display_tr">
-                        <div class="display_td work_table_text"><strong>Объем</strong></div>
-                        <div class="display_td work_table_text_cont">
-                            <div class="display_table width_260">
-                                <div class="display_tr">
-                                    <div class="display_td">
-                                        <p class="mar_r_5">
-                                            <input class="" type="text" value="">
-                                        </p>
-                                    </div>
-                                    <div class="display_td col_form_sm_con_2">
-                                        <p>м.п.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>      
 
                     <div class="display_tr">
-                        <div class="display_td work_table_text two_line_text"><strong>Машины и механизмы</strong></div>
-                        <div class="display_td work_table_text_cont add_form">
-                            <span class="clon_cont">
-                                <div class="display_table">
-                                    <div class="display_tr">
-                                        <div class="display_td col_form_lg search">
-                                            <input type="submit" value="">
-                                            <input type="text" value="" placeholder="Выберите рабочего-строителя">
-                                            <div class="clear"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <span class="delete_button delete"></span>
-                            </span>
-                            <span class="add_button add"></span>
+                        <div class="display_td add_user_text">
+                            <strong>ФИО</strong>
                         </div>
-
-                    </div>  
-                    <div class="display_tr">
-                        <div class="display_td work_table_text"><strong>Материалы</strong></div>
-                        <div class="display_td">
-                            
-                            <div class="work_table_text_cont add_form check_limit_box">
-                                <span class="clon_cont">
-                                    <div class="display_table">
-                                        <div class="display_tr">
-                                            <div class="display_td col_form_sm"><input type="text" value="" placeholder="0-0001" /></div>
-                                            <div class="display_td col_form_lg"><input type="text" value="" placeholder="Песок" /></div>
-                                            <div class="display_td col_form_sm"><input class="check_limit_form" type="text" value="" placeholder="1000" /></div>
-                                            <div class="display_td col_form_sm_con_2">м<sup>3</sup></div>
-                                        </div>
-                                    </div>
-                                    <span class="delete_button delete"></span>
-                                    <span class="check_text">Превышен нормативный объем</span>
-                                </span>
-                            </div>
-
-                            <div class="work_table_text_cont add_form">
-                                <span class="clon_cont">
-                                    <div class="display_table">
-                                        <div class="display_tr">
-                                            <div class="display_td col_form_sm"><input type="text" value="" placeholder="0-0002" /></div>
-                                            <div class="display_td col_form_lg"><input type="text" value="" placeholder="Щебень" /></div>
-                                            <div class="display_td col_form_sm"><input type="text" value="" /></div>
-                                            <div class="display_td col_form_sm_con_2">тонн</div>
-                                        </div>
-                                    </div>
-                                    <span class="delete_button delete"></span>
-                                </span>
-                                <span class="add_button add"></span>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="display_tr">
-                        <div class="display_td work_table_text"><strong>Рабочие</strong></div>
-                        <div class="display_td">
-                            
-                            <div class="work_table_text_cont add_form">
-                                <span class="clon_cont">
-                                    <div class="display_table">
-                                        <div class="display_tr">
-                                            <div class="display_td col_form_sm"><input type="text" value="" placeholder="0-0001" /></div>
-                                            <div class="display_td col_form_lg"><input type="text" value="" placeholder="Рабочий 1 разряда" /></div>
-                                            <div class="display_td col_form_sm"><input type="text" value="" /></div>
-                                            <div class="display_td col_form_sm_con_2">чел.-ч.</div>
-                                        </div>
-                                    </div>
-                                    <span class="delete_button delete"></span>
-                                </span>
-                            </div>
-
-                            <div class="work_table_text_cont add_form">
-                                <span class="clon_cont">
-                                    <div class="display_table">
-                                        <div class="display_tr">
-                                            <div class="display_td col_form_sm"><input type="text" value="" placeholder="0-0001" /></div>
-                                            <div class="display_td col_form_lg"><input type="text" value="" placeholder="Рабочий 1 разряда" /></div>
-                                            <div class="display_td col_form_sm"><input type="text" value="" /></div>
-                                            <div class="display_td col_form_sm_con_2">чел.-ч.</div>
-                                        </div>
-                                    </div>
-                                    <span class="delete_button delete"></span>
-                                </span>
-                                <span class="add_button add"></span>
-                            </div>
-
-                        </div>
-                    </div>      
-
-                </div>
-
-
-
-                </div>
-
-                <div class="jobs_types_right_box">
-                    <div class="weather_box">
-                        <div class="weather_box_header">
-                          <p><strong>Согласование формы</strong></p>
-                        </div>
-                        <div class="weather_box_cont">
-                            <select>
-                              <option>Осадки</option>
-                              <option>Осадки</option>
-                              <option>Осадки</option>
-                              <option>Осадки</option>
-                            </select> 
-                            <select>
-                              <option>Облачность</option>
-                              <option>Облачность</option>
-                              <option>Облачность</option>
-                              <option>Облачность</option>
-                            </select> 
-                            <div class="weather_temperature">
-                                <div class="alignleft">
-                                    <p>
-                                        <strong>Температура</strong>
-                                    </p>
-                                </div>
-                                <div class="alignright">
-                                    <div class="alignleft">
-                                        <input class="width_100 mar_r_5" type="text" value="">
-                                    </div>
-                                    <div class="alignleft">
-                                        <p>&deg;C</p>
-                                    </div>
-                                
-                                </div>
-                            </div>
-                            
-                            
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="work_table">
-
-                    <div class="display_tr">
-                        <div class="work_table_text"><strong>Комментарий</strong></div>
-                        <div class="work_table_text_cont add_form">
-                            <textarea></textarea>
+                        <div class="display_td add_user_form_2">
+                            <input type="text" value="" />
                         </div>
                     </div>
 
                     <div class="display_tr">
-                        <div class="work_table_text"><strong>Файлы</strong></div>
-                        <div class="work_table_text_cont add_form">
-                            
+                        <div class="display_td add_user_text">
+                            <strong>Телефон</strong>
+                        </div>
+                        <div class="display_td add_user_form_2">
+                            <input type="text" id="phone" class="width_50pr" name="phone" placeholder="+7(___) ___-____">
+
+                        </div>
+                    </div>
+
+                    <div class="display_tr">
+                        <div class="display_td add_user_text">
+                            <strong>Электронная почта</strong>
+                        </div>
+                        <div class="display_td add_user_form_2">
+                            <input class="width_50pr" type="text" value="" />
                         </div>
                     </div>
 
                 </div>
+
 
 
             </div>
@@ -470,13 +295,6 @@
         <script type="text/javascript" src="plugins/scrollbar-plugin/jquery.mousewheel.min.js"></script>
         <script src="plugins/scrollbar-plugin/scrollbar-plugin.js"></script>
         <script src="plugins/scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
-
-        <!-- datepicker-plugin
-        ============================================ -->
-
-        <script type="text/javascript" src="plugins/datepicker/date.js"></script>
-        <script type="text/javascript" src="plugins/datepicker/jquery.datePicker-2.1.2.js"></script>
-        <script type="text/javascript" src="plugins/datepicker/date.plugins.js"></script>
 
         
     </body>
