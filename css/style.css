@@ -1931,14 +1931,25 @@ textarea {
   position: relative;
 }
 .add_user_form_3 {
-  width: 650px;
+  width: 550px;
+  position: relative;
+}
+.add_user_form_4 {
+  width: 250px;
+  position: relative;
 }
 .add_user_work_table, .add_user_work_table .work_table_text {
   width: auto;
 }
-.delete_button {
-  right: 132px;
+.add_user_form_2_poz .delete_button {
+  right: 32px;
 }
-.add_button {
-  right: 167px;
+.add_user_form_2_poz .add_button {
+  right: 67px;
+}
+.add_user_form_4_poz .delete_button {
+  right: 232px;
+}
+.add_user_form_4_poz .add_button {
+  right: 267px;
 }
