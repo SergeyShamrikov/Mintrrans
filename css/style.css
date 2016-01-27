@@ -1924,8 +1924,21 @@ textarea {
 }
 
 /* --------------------------------------------
-        contract_new
+        new_user_contractor
    -------------------------------------------- */
 .add_user_form_2 {
   width: 450px;
+  position: relative;
+}
+.add_user_form_3 {
+  width: 650px;
+}
+.add_user_work_table, .add_user_work_table .work_table_text {
+  width: auto;
+}
+.delete_button {
+  right: 132px;
+}
+.add_button {
+  right: 167px;
 }
