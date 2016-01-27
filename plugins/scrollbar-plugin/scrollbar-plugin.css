@@ -1,7 +1,7 @@
 
 #mcs_container{position:relative;  height:100%;}
 #mcs_container .customScrollBox{position:relative; height:100%; }
-#mcs_container .customScrollBox .container{position:relative; width:100%; top:0; float:left;}
+#mcs_container .customScrollBox .containerBox{position:relative; width:100%; top:0; float:left;}
 #mcs_container .customScrollBox .content{clear:both;}
 #mcs_container .customScrollBox .content p{padding:0 5px; margin:10px 0; color:#fff; font-family:Verdana, Geneva, sans-serif; font-size:13px; line-height:20px;}
 #mcs_container .customScrollBox .content p.alt{padding:10px 5px; margin:10px 0; color:#fff; font-family:Georgia, "Times New Roman", Times, serif; font-size:17px; line-height:19px; color:#999;}

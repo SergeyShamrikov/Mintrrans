@@ -12,6 +12,13 @@ body {
 .enter_wr {
 	background-position: -200px 0;
 }
+
+}
+@media only screen and (max-width: 1200px) {
+.check_text {
+	width: 180px;
+	right: -230px;
+}
 }
 @media only screen and (max-width: 992px) {
 

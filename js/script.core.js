@@ -48,6 +48,10 @@
 
             $(".drop_menu").click(function(){
                 $(this).toggleClass("show_icon").closest(".open_box").toggleClass("open_bg").next(".table_box_ins").find(".block_ins").stop().slideToggle("medium");
+                $(this).toggleClass("show_icon").closest(".open_box_2").toggleClass("open_bg").next(".table_box_ins").find(".block_ins_2").stop().slideToggle("medium");
+                $(this).toggleClass("show_icon").closest(".open_box_3").toggleClass("open_bg").next(".table_box_ins").find(".block_ins_3").stop().slideToggle("medium");
+                $(this).toggleClass("show_icon").closest(".open_box_4").toggleClass("open_bg").next(".table_box_ins").find(".block_ins_4").stop().slideToggle("medium");
+                $(this).toggleClass("show_icon").closest(".open_box_5").toggleClass("open_bg").next(".table_box_ins").find(".block_ins_5").stop().slideToggle("medium");
             });
 
 		},

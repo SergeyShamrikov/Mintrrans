@@ -3,7 +3,7 @@
 $.fn.mCustomScrollbar = function (scrollType,animSpeed,easeType,bottomSpace,draggerDimType,mouseWheelSupport,scrollBtnsSupport,scrollBtnsSpeed){
 	var id = $(this).attr("id");
 	var $customScrollBox=$("#"+id+" .customScrollBox");
-	var $customScrollBox_container=$("#"+id+" .customScrollBox .container");
+	var $customScrollBox_container=$("#"+id+" .customScrollBox .containerBox");
 	var $customScrollBox_content=$("#"+id+" .customScrollBox .content");
 	var $dragger_container=$("#"+id+" .dragger_container");
 	var $dragger=$("#"+id+" .dragger");
